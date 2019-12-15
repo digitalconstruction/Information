@@ -8,7 +8,7 @@
 
 <https://w3id.org/digitalconstruction/Information#> rdf:type owl:Ontology ;
                                                      owl:imports <http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl> ,
-                                                                 <https://w3id.org/digitalconstruction/1.0.0> ;
+                                                                 <https://w3id.org/digitalconstruction/Entities#> ;
                                                      <http://purl.org/dc/terms/creator> "Seppo Torma" ,
                                                                                         "Yuan Zheng" ;
                                                      rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
