@@ -4,15 +4,15 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/digitalconstruction/Information#> .
+@base <https://w3id.org/digitalconstruction/Information> .
 
-<https://w3id.org/digitalconstruction/Information#> rdf:type owl:Ontology ;
-                                                     owl:imports <http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl> ,
-                                                                 <https://w3id.org/digitalconstruction/Entities#> ;
-                                                     <http://purl.org/dc/terms/creator> "Seppo Torma" ,
-                                                                                        "Yuan Zheng" ;
-                                                     rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
-                                                     owl:versionInfo "1.0.0" .
+<https://w3id.org/digitalconstruction/Information> rdf:type owl:Ontology ;
+                                                    owl:imports <http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl> ,
+                                                                <https://w3id.org/digitalconstruction/Entities#> ;
+                                                    <http://purl.org/dc/terms/creator> "Seppo Torma" ,
+                                                                                       "Yuan Zheng" ;
+                                                    rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
+                                                    owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -40,71 +40,60 @@
 
 ###  https://w3id.org/digitalconstruction/Information#hasClient
 :hasClient rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
            rdfs:domain :Contract ;
            rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasConstraint
 :hasConstraint rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :Plan .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :Contract ;
                rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
 :hasEvaluationCriteria rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain :Plan .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasHandler
 :hasHandler rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Issue .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasObjective
 :hasObjective rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :Plan .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasParentIssue
 :hasParentIssue rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain :Issue ;
                 rdfs:range :Issue .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasPlannedActivity
 :hasPlannedActivity rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain :Plan ;
                     rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :Issue .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasSolution
 :hasSolution rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :Issue .
 
 
 ###  https://w3id.org/digitalconstruction/Information#isAbout
 :isAbout rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain <https://w3id.org/digitalconstruction/Entities#InformationObject> ;
          rdfs:range <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
 
@@ -151,7 +140,8 @@
 
 ###  https://w3id.org/digitalconstruction/Information#Observation
 :Observation rdf:type owl:Class ;
-             rdfs:subClassOf :Event .
+             rdfs:subClassOf :Event ;
+             rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Plan
@@ -163,22 +153,6 @@
 ###  https://w3id.org/digitalconstruction/Information#Specification
 :Specification rdf:type owl:Class ;
                rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationObject> .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Contract
-                :Design
-                :Event
-                :Image
-                :Issue
-                :Plan
-                :Specification
-              )
-] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
