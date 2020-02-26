@@ -1,0 +1,141 @@
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl> .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities#> .
+<https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/terms/creator> "Seppo Torma" .
+<https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2000/01/rdf-schema#comment> "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/digitalconstruction/Information#ClientObligation
+<https://w3id.org/digitalconstruction/Information#ClientObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#ClientObligation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Contract> .
+<https://w3id.org/digitalconstruction/Information#ClientObligation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+# 
+# https://w3id.org/digitalconstruction/Information#ContractorObligation
+<https://w3id.org/digitalconstruction/Information#ContractorObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#ContractorObligation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Contract> .
+<https://w3id.org/digitalconstruction/Information#ContractorObligation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasClient
+<https://w3id.org/digitalconstruction/Information#hasClient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasClient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Contract> .
+<https://w3id.org/digitalconstruction/Information#hasClient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasConstraint
+<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasContractor
+<https://w3id.org/digitalconstruction/Information#hasContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasContractor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Contract> .
+<https://w3id.org/digitalconstruction/Information#hasContractor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
+<https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasHandler
+<https://w3id.org/digitalconstruction/Information#hasHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasHandler> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Issue> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasObjective
+<https://w3id.org/digitalconstruction/Information#hasObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasParentIssue
+<https://w3id.org/digitalconstruction/Information#hasParentIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasParentIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Issue> .
+<https://w3id.org/digitalconstruction/Information#hasParentIssue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#Issue> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasPlannedActivity
+<https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+<https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasScope
+<https://w3id.org/digitalconstruction/Information#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasScope> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Issue> .
+# 
+# https://w3id.org/digitalconstruction/Information#hasSolution
+<https://w3id.org/digitalconstruction/Information#hasSolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasSolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Issue> .
+# 
+# https://w3id.org/digitalconstruction/Information#isAbout
+<https://w3id.org/digitalconstruction/Information#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+# 
+# https://w3id.org/digitalconstruction/Entities#InformationObject
+# 
+# https://w3id.org/digitalconstruction/Information#Contract
+<https://w3id.org/digitalconstruction/Information#Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Contract> <http://www.w3.org/2000/01/rdf-schema#comment> "A legally binding agreement that specifies the obligations and rights for both client and contractor in construction." .
+# 
+# https://w3id.org/digitalconstruction/Information#Design
+<https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification of the construction products." .
+# 
+# https://w3id.org/digitalconstruction/Information#Event
+<https://w3id.org/digitalconstruction/Information#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A occurence that happens with a time instant for obtaining the information." .
+# 
+# https://w3id.org/digitalconstruction/Information#Image
+<https://w3id.org/digitalconstruction/Information#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "An aritifact that captured by visual tools, which contains useful semantic information." .
+# 
+# https://w3id.org/digitalconstruction/Information#Issue
+<https://w3id.org/digitalconstruction/Information#Issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Issue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Issue> <http://www.w3.org/2000/01/rdf-schema#comment> "A problem that detected after the inspection that requires a particular solution." .
+# 
+# https://w3id.org/digitalconstruction/Information#Observation
+<https://w3id.org/digitalconstruction/Information#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Event> .
+<https://w3id.org/digitalconstruction/Information#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." .
+# 
+# https://w3id.org/digitalconstruction/Information#Plan
+<https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+<https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "Plan means a representation of content and sequence of all activities associated with the construction project." .
+# 
+# https://w3id.org/digitalconstruction/Information#Specification
+<https://w3id.org/digitalconstruction/Information#Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Specification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationObject> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
