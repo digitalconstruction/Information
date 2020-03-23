@@ -7,9 +7,10 @@
 @base <https://w3id.org/digitalconstruction/Information> .
 
 <https://w3id.org/digitalconstruction/Information> rdf:type owl:Ontology ;
-                                                    owl:imports <https://w3id.org/digitalconstruction/Entities#> ;
-                                                    <http://purl.org/dc/elements/1.1/date> "2020-03-09" ;
-                                                    <http://purl.org/dc/elements/1.1/title> "Digital construction - Information" ;
+                                                    owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
+                                                                <https://w3id.org/digitalconstruction/Entities#> ;
+                                                    <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
+                                                    <http://purl.org/dc/elements/1.1/title> "Digital Construction Information" ;
                                                     <http://purl.org/dc/terms/created> "2020-01-12" ;
                                                     <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
                                                                                        "Yuan Zheng" ;
@@ -17,7 +18,7 @@
                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" ;
                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Information" ;
                                                     rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
-                                                    rdfs:label "Digital construction - Information" ;
+                                                    rdfs:label "Digital Construction Information" ;
                                                     rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 
 #################################################################
@@ -67,24 +68,29 @@
 ###  https://w3id.org/digitalconstruction/Information#ClientObligation
 :ClientObligation rdf:type owl:ObjectProperty ;
                   rdfs:domain :Contract ;
-                  rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+                  rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                  rdfs:label "clientObligation" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#ContractorObligation
 :ContractorObligation rdf:type owl:ObjectProperty ;
                       rdfs:domain :Contract ;
-                      rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+                      rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                      rdfs:label "contractorObligation" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasClient
 :hasClient rdf:type owl:ObjectProperty ;
            rdfs:domain :Contract ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+           rdfs:label "hasClient" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasConstraint
 :hasConstraint rdf:type owl:ObjectProperty ;
-               rdfs:domain :Plan .
+               rdfs:domain :Plan ;
+               rdfs:range <https://w3id.org/digitalconstruction/Variables#Constraint> ;
+               rdfs:label "hasConstraint" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasContractor
@@ -95,45 +101,48 @@
 
 ###  https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
 :hasEvaluationCriteria rdf:type owl:ObjectProperty ;
-                       rdfs:domain :Plan .
+                       rdfs:domain :Plan ;
+                       rdfs:label "hasEvaluationCriteria" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasHandler
 :hasHandler rdf:type owl:ObjectProperty ;
-            rdfs:domain :Issue .
+            rdfs:domain :Issue ;
+            rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+            rdfs:label "hasHandler" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasObjective
 :hasObjective rdf:type owl:ObjectProperty ;
-              rdfs:domain :Plan .
+              rdfs:domain :Plan ;
+              rdfs:label "hasObjective" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasParentIssue
 :hasParentIssue rdf:type owl:ObjectProperty ;
                 rdfs:domain :Issue ;
-                rdfs:range :Issue .
+                rdfs:range :Issue ;
+                rdfs:label "hasParentIssue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasPlannedActivity
 :hasPlannedActivity rdf:type owl:ObjectProperty ;
                     rdfs:domain :Plan ;
-                    rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+                    rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                    rdfs:label "hasPlannedActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
-          rdfs:domain :Issue .
+          rdfs:domain :Issue ;
+          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+          rdfs:label "hasScope" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasSolution
 :hasSolution rdf:type owl:ObjectProperty ;
-             rdfs:domain :Issue .
-
-
-###  https://w3id.org/digitalconstruction/Information#isAbout
-:isAbout rdf:type owl:ObjectProperty ;
-         rdfs:domain <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-         rdfs:range <https://w3id.org/digitalconstruction/Entities#IdentifiableEntity> .
+             rdfs:domain :Issue ;
+             rdfs:label "hasSolution" .
 
 
 #################################################################
@@ -148,51 +157,65 @@
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> rdf:type owl:Class .
 
 
+###  https://w3id.org/digitalconstruction/Information#BuildingInfomationModel
+:BuildingInfomationModel rdf:type owl:Class ;
+                         rdfs:subClassOf :Design ;
+                         rdfs:label "BuildingInformationModel" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Contract
 :Contract rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-          rdfs:comment "A legally binding agreement that specifies the obligations and rights for both client and contractor in construction." .
+          rdfs:comment "An agreement that specifies the mutual obligations of a client and a contractor." ;
+          rdfs:label "Contract" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Design
 :Design rdf:type owl:Class ;
         rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-        rdfs:comment "A specification of the construction products." .
+        rdfs:comment "A specification of the construction products." ;
+        rdfs:label "Design" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Drawing
+:Drawing rdf:type owl:Class ;
+         rdfs:subClassOf :Design ;
+         rdfs:label "Drawing" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Event
 :Event rdf:type owl:Class ;
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-       rdfs:comment "A occurence that happens with a time instant for obtaining the information." .
+       rdfs:comment "A occurence that happens with a time instant for obtaining the information." ;
+       rdfs:label "Event" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Image
 :Image rdf:type owl:Class ;
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-       rdfs:comment "An aritifact that captured by visual tools, which contains useful semantic information." .
+       rdfs:comment "An information content entity containing visual data. For example, a photograph." ;
+       rdfs:label "Image" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Issue
 :Issue rdf:type owl:Class ;
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-       rdfs:comment "A problem that detected after the inspection that requires a particular solution." .
+       rdfs:comment "A detected problem that requires an action." ;
+       rdfs:label "Issue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Observation
 :Observation rdf:type owl:Class ;
              rdfs:subClassOf :Event ;
-             rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." .
+             rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." ;
+             rdfs:label "Observation" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Plan
 :Plan rdf:type owl:Class ;
       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-      rdfs:comment "Plan means a representation of content and sequence of all activities associated with the construction project." .
-
-
-###  https://w3id.org/digitalconstruction/Information#Specification
-:Specification rdf:type owl:Class ;
-               rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+      rdfs:comment "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network." ;
+      rdfs:label "Plan" .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

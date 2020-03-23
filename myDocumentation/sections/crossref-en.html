@@ -1,66 +1,70 @@
-<h2 id="crossreference" class="list">Cross reference for Digital construction - Information classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Digital construction - Information.
+<h2 id="crossreference" class="list">Cross reference for Digital Construction Information classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Digital Construction Information.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#BuildingInfomationModel"
+            title="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">BuildingInformationModel</a>
+      </li>
+      <li>
          <a href="#Contract"
-            title="https://w3id.org/digitalconstruction/Information#Contract">
-            <span>contract</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
       </li>
       <li>
          <a href="#Design"
-            title="https://w3id.org/digitalconstruction/Information#Design">
-            <span>design</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Design">Design</a>
+      </li>
+      <li>
+         <a href="#Drawing"
+            title="https://w3id.org/digitalconstruction/Information#Drawing">Drawing</a>
       </li>
       <li>
          <a href="#Event"
-            title="https://w3id.org/digitalconstruction/Information#Event">
-            <span>event</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Event">Event</a>
       </li>
       <li>
          <a href="#Image"
-            title="https://w3id.org/digitalconstruction/Information#Image">
-            <span>image</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Image">Image</a>
       </li>
       <li>
          <a href="#Issue"
-            title="https://w3id.org/digitalconstruction/Information#Issue">
-            <span>issue</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
       </li>
       <li>
          <a href="#Observation"
-            title="https://w3id.org/digitalconstruction/Information#Observation">
-            <span>observation</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Observation">Observation</a>
       </li>
       <li>
          <a href="#Plan"
-            title="https://w3id.org/digitalconstruction/Information#Plan">
-            <span>plan</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Specification"
-            title="https://w3id.org/digitalconstruction/Information#Specification">
-            <span>specification</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
       </li>
    </ul>
+   <div class="entity" id="BuildingInfomationModel">
+      <h3>BuildingInformationModel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#BuildingInfomationModel</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Design"
+               title="https://w3id.org/digitalconstruction/Information#Design">Design</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Contract">
-      <h3>contract<sup class="type-c" title="class">c</sup>
+      <h3>Contract<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Contract</p>
       <div class="comment">
-         <span class="markdown">A legally binding agreement that specifies the obligations and rights for both client and contractor in construction.</span>
+         <span class="markdown">An agreement that specifies the mutual obligations of a client and a contractor.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -72,19 +76,19 @@ This section provides details for each class and property defined by Digital con
          <dt>is in domain of</dt>
          <dd>
             <a href="#ClientObligation"
-               title="https://w3id.org/digitalconstruction/Information#ClientObligation">client obligation</a>
+               title="https://w3id.org/digitalconstruction/Information#ClientObligation">clientObligation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ContractorObligation"
-               title="https://w3id.org/digitalconstruction/Information#ContractorObligation">contractor obligation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasClient"
-               title="https://w3id.org/digitalconstruction/Information#hasClient">has client</a>
+               title="https://w3id.org/digitalconstruction/Information#ContractorObligation">contractorObligation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasContractor"
                title="https://w3id.org/digitalconstruction/Information#hasContractor">has contractor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasClient"
+               title="https://w3id.org/digitalconstruction/Information#hasClient">hasClient</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Design">
-      <h3>design<sup class="type-c" title="class">c</sup>
+      <h3>Design<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -100,10 +104,34 @@ This section provides details for each class and property defined by Digital con
                   title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#BuildingInfomationModel"
+               title="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">BuildingInformationModel</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Drawing"
+               title="https://w3id.org/digitalconstruction/Information#Drawing">Drawing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Drawing">
+      <h3>Drawing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Drawing</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Design"
+               title="https://w3id.org/digitalconstruction/Information#Design">Design</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Event">
-      <h3>event<sup class="type-c" title="class">c</sup>
+      <h3>Event<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -122,20 +150,20 @@ This section provides details for each class and property defined by Digital con
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Observation"
-               title="https://w3id.org/digitalconstruction/Information#Observation">observation</a>
+               title="https://w3id.org/digitalconstruction/Information#Observation">Observation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Image">
-      <h3>image<sup class="type-c" title="class">c</sup>
+      <h3>Image<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Image</p>
       <div class="comment">
-         <span class="markdown">An aritifact that captured by visual tools, which contains useful semantic information.</span>
+         <span class="markdown">An information content entity containing visual data. For example, a photograph.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -147,14 +175,14 @@ This section provides details for each class and property defined by Digital con
       </dl>
    </div>
    <div class="entity" id="Issue">
-      <h3>issue<sup class="type-c" title="class">c</sup>
+      <h3>Issue<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Issue</p>
       <div class="comment">
-         <span class="markdown">A problem that detected after the inspection that requires a particular solution.</span>
+         <span class="markdown">A detected problem that requires an action.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -166,25 +194,25 @@ This section provides details for each class and property defined by Digital con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasHandler"
-               title="https://w3id.org/digitalconstruction/Information#hasHandler">has handler</a>
+               title="https://w3id.org/digitalconstruction/Information#hasHandler">hasHandler</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasParentIssue"
-               title="https://w3id.org/digitalconstruction/Information#hasParentIssue">has parent issue</a>
+               title="https://w3id.org/digitalconstruction/Information#hasParentIssue">hasParentIssue</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasScope"
-               title="https://w3id.org/digitalconstruction/Information#hasScope">has scope</a>
+               title="https://w3id.org/digitalconstruction/Information#hasScope">hasScope</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSolution"
-               title="https://w3id.org/digitalconstruction/Information#hasSolution">has solution</a>
+               title="https://w3id.org/digitalconstruction/Information#hasSolution">hasSolution</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasParentIssue"
-               title="https://w3id.org/digitalconstruction/Information#hasParentIssue">has parent issue</a>
+               title="https://w3id.org/digitalconstruction/Information#hasParentIssue">hasParentIssue</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Observation">
-      <h3>observation<sup class="type-c" title="class">c</sup>
+      <h3>Observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -197,20 +225,20 @@ This section provides details for each class and property defined by Digital con
          <dt>has super-classes</dt>
          <dd>
             <a href="#Event"
-               title="https://w3id.org/digitalconstruction/Information#Event">event</a>
+               title="https://w3id.org/digitalconstruction/Information#Event">Event</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Plan">
-      <h3>plan<sup class="type-c" title="class">c</sup>
+      <h3>Plan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Plan</p>
       <div class="comment">
-         <span class="markdown">Plan means a representation of content and sequence of all activities associated with the construction project.</span>
+         <span class="markdown">A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -222,30 +250,14 @@ This section provides details for each class and property defined by Digital con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasConstraint"
-               title="https://w3id.org/digitalconstruction/Information#hasConstraint">has constraint</a>
+               title="https://w3id.org/digitalconstruction/Information#hasConstraint">hasConstraint</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasEvaluationCriteria"
-               title="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">has evaluation criteria</a>
+               title="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">hasEvaluationCriteria</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasObjective"
-               title="https://w3id.org/digitalconstruction/Information#hasObjective">has objective</a>
+               title="https://w3id.org/digitalconstruction/Information#hasObjective">hasObjective</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPlannedActivity"
-               title="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">has planned activity</a>
+               title="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">hasPlannedActivity</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Specification">
-      <h3>specification<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Specification</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -254,27 +266,11 @@ This section provides details for each class and property defined by Digital con
    <ul class="hlist">
       <li>
          <a href="#ClientObligation"
-            title="https://w3id.org/digitalconstruction/Information#ClientObligation">
-            <span>client obligation</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#ClientObligation">clientObligation</a>
       </li>
       <li>
          <a href="#ContractorObligation"
-            title="https://w3id.org/digitalconstruction/Information#ContractorObligation">
-            <span>contractor obligation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasClient"
-            title="https://w3id.org/digitalconstruction/Information#hasClient">
-            <span>has client</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasConstraint"
-            title="https://w3id.org/digitalconstruction/Information#hasConstraint">
-            <span>has constraint</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#ContractorObligation">contractorObligation</a>
       </li>
       <li>
          <a href="#hasContractor"
@@ -283,56 +279,44 @@ This section provides details for each class and property defined by Digital con
          </a>
       </li>
       <li>
+         <a href="#hasClient"
+            title="https://w3id.org/digitalconstruction/Information#hasClient">hasClient</a>
+      </li>
+      <li>
+         <a href="#hasConstraint"
+            title="https://w3id.org/digitalconstruction/Information#hasConstraint">hasConstraint</a>
+      </li>
+      <li>
          <a href="#hasEvaluationCriteria"
-            title="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">
-            <span>has evaluation criteria</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">hasEvaluationCriteria</a>
       </li>
       <li>
          <a href="#hasHandler"
-            title="https://w3id.org/digitalconstruction/Information#hasHandler">
-            <span>has handler</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasHandler">hasHandler</a>
       </li>
       <li>
          <a href="#hasObjective"
-            title="https://w3id.org/digitalconstruction/Information#hasObjective">
-            <span>has objective</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasObjective">hasObjective</a>
       </li>
       <li>
          <a href="#hasParentIssue"
-            title="https://w3id.org/digitalconstruction/Information#hasParentIssue">
-            <span>has parent issue</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasParentIssue">hasParentIssue</a>
       </li>
       <li>
          <a href="#hasPlannedActivity"
-            title="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">
-            <span>has planned activity</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">hasPlannedActivity</a>
       </li>
       <li>
          <a href="#hasScope"
-            title="https://w3id.org/digitalconstruction/Information#hasScope">
-            <span>has scope</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasScope">hasScope</a>
       </li>
       <li>
          <a href="#hasSolution"
-            title="https://w3id.org/digitalconstruction/Information#hasSolution">
-            <span>has solution</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isAbout"
-            title="https://w3id.org/digitalconstruction/Information#isAbout">
-            <span>is about</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#hasSolution">hasSolution</a>
       </li>
    </ul>
    <div class="entity" id="ClientObligation">
-      <h3>client obligation<sup class="type-op" title="object property">op</sup>
+      <h3>clientObligation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -343,7 +327,7 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Contract"
-                  title="https://w3id.org/digitalconstruction/Information#Contract">contract</a>
+                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -355,7 +339,7 @@ This section provides details for each class and property defined by Digital con
       </div>
    </div>
    <div class="entity" id="ContractorObligation">
-      <h3>contractor obligation<sup class="type-op" title="object property">op</sup>
+      <h3>contractorObligation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -366,54 +350,13 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Contract"
-                  title="https://w3id.org/digitalconstruction/Information#Contract">contract</a>
+                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted"
                      title="https://w3id.org/digitalconstruction/Entities#Activity">activity</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasClient">
-      <h3>has client<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasClient</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Contract"
-                  title="https://w3id.org/digitalconstruction/Information#Contract">contract</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasConstraint">
-      <h3>has constraint<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasConstraint</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Plan"
-                  title="https://w3id.org/digitalconstruction/Information#Plan">plan</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -430,7 +373,7 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Contract"
-                  title="https://w3id.org/digitalconstruction/Information#Contract">contract</a>
+                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -441,8 +384,54 @@ This section provides details for each class and property defined by Digital con
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasClient">
+      <h3>hasClient<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasClient</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Contract"
+                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConstraint">
+      <h3>hasConstraint<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasConstraint</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Plan"
+                  title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Variables#Constraint">constraint</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasEvaluationCriteria">
-      <h3>has evaluation criteria<sup class="type-op" title="object property">op</sup>
+      <h3>hasEvaluationCriteria<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -453,14 +442,14 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Plan"
-                  title="https://w3id.org/digitalconstruction/Information#Plan">plan</a>
+                  title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasHandler">
-      <h3>has handler<sup class="type-op" title="object property">op</sup>
+      <h3>hasHandler<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -471,14 +460,19 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Issue"
-                  title="https://w3id.org/digitalconstruction/Information#Issue">issue</a>
+                  title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasObjective">
-      <h3>has objective<sup class="type-op" title="object property">op</sup>
+      <h3>hasObjective<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -489,14 +483,14 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Plan"
-                  title="https://w3id.org/digitalconstruction/Information#Plan">plan</a>
+                  title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasParentIssue">
-      <h3>has parent issue<sup class="type-op" title="object property">op</sup>
+      <h3>hasParentIssue<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -507,20 +501,20 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Issue"
-                  title="https://w3id.org/digitalconstruction/Information#Issue">issue</a>
+                  title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Issue"
-                  title="https://w3id.org/digitalconstruction/Information#Issue">issue</a>
+                  title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasPlannedActivity">
-      <h3>has planned activity<sup class="type-op" title="object property">op</sup>
+      <h3>hasPlannedActivity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -531,7 +525,7 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Plan"
-                  title="https://w3id.org/digitalconstruction/Information#Plan">plan</a>
+                  title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -543,7 +537,7 @@ This section provides details for each class and property defined by Digital con
       </div>
    </div>
    <div class="entity" id="hasScope">
-      <h3>has scope<sup class="type-op" title="object property">op</sup>
+      <h3>hasScope<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -554,14 +548,18 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Issue"
-                  title="https://w3id.org/digitalconstruction/Information#Issue">issue</a>
+                  title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasSolution">
-      <h3>has solution<sup class="type-op" title="object property">op</sup>
+      <h3>hasSolution<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -572,31 +570,8 @@ This section provides details for each class and property defined by Digital con
             <dt>has domain</dt>
             <dd>
                <a href="#Issue"
-                  title="https://w3id.org/digitalconstruction/Information#Issue">issue</a>
+                  title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isAbout">
-      <h3>is about<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#isAbout</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#IdentifiableEntity">identifiable entity</span>
             </dd>
          </dl>
       </div>

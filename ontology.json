@@ -37,10 +37,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Information",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/date" : [ {
-    "@value" : "2020-03-09"
+    "@value" : "2020-03-20"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Digital construction - Information"
+    "@value" : "Digital Construction Information"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2020-01-12"
@@ -63,19 +63,33 @@
     "@value" : "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Digital construction - Information"
+    "@value" : "Digital Construction Information"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
+  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#BuildingInfomationModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BuildingInformationModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#Design"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#ClientObligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "clientObligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
@@ -84,7 +98,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Information#Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A legally binding agreement that specifies the obligations and rights for both client and contractor in construction."
+    "@value" : "An agreement that specifies the mutual obligations of a client and a contractor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
@@ -95,6 +112,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contractorObligation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ]
@@ -104,14 +124,29 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A specification of the construction products."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Design"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#Drawing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drawing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#Design"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A occurence that happens with a time instant for obtaining the information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
@@ -120,7 +155,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Information#Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An aritifact that captured by visual tools, which contains useful semantic information."
+    "@value" : "An information content entity containing visual data. For example, a photograph."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
@@ -129,7 +167,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Information#Issue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A problem that detected after the inspection that requires a particular solution."
+    "@value" : "A detected problem that requires an action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
@@ -140,6 +181,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Event"
   } ]
@@ -147,14 +191,11 @@
   "@id" : "https://w3id.org/digitalconstruction/Information#Plan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Plan means a representation of content and sequence of all activities associated with the construction project."
+    "@value" : "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Specification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Plan"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ]
@@ -164,6 +205,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasClient"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
@@ -172,6 +216,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Variables#Constraint"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasContractor",
@@ -187,24 +237,39 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasEvaluationCriteria"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasHandler",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasHandler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasObjective",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasObjective"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasParentIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasParentIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
@@ -215,6 +280,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPlannedActivity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ]
@@ -223,20 +291,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasScope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isAbout",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#IdentifiableEntity"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSolution"
   } ]
 } ]
