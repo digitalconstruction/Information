@@ -280,6 +280,16 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#Certificate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Certificate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:label>Certificate</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Contract -->
 
 
@@ -345,6 +355,26 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#LookaheadPlan -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#LookaheadPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:label>LookaheadPlan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#MasterPlan -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#MasterPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:label>MasterPlan</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Observation -->
 
 
@@ -363,6 +393,26 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
         <rdfs:comment>A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network.</rdfs:comment>
         <rdfs:label>Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#PointCloud -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PointCloud">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:label>PointCloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#WeekPlan -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#WeekPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:label>WeekPlan</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

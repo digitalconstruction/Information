@@ -8,6 +8,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">BuildingInformationModel</a>
       </li>
       <li>
+         <a href="#Certificate"
+            title="https://w3id.org/digitalconstruction/Information#Certificate">Certificate</a>
+      </li>
+      <li>
          <a href="#Contract"
             title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
       </li>
@@ -32,12 +36,28 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
       </li>
       <li>
+         <a href="#LookaheadPlan"
+            title="https://w3id.org/digitalconstruction/Information#LookaheadPlan">LookaheadPlan</a>
+      </li>
+      <li>
+         <a href="#MasterPlan"
+            title="https://w3id.org/digitalconstruction/Information#MasterPlan">MasterPlan</a>
+      </li>
+      <li>
          <a href="#Observation"
             title="https://w3id.org/digitalconstruction/Information#Observation">Observation</a>
       </li>
       <li>
          <a href="#Plan"
             title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+      </li>
+      <li>
+         <a href="#PointCloud"
+            title="https://w3id.org/digitalconstruction/Information#PointCloud">PointCloud</a>
+      </li>
+      <li>
+         <a href="#WeekPlan"
+            title="https://w3id.org/digitalconstruction/Information#WeekPlan">WeekPlan</a>
       </li>
    </ul>
    <div class="entity" id="BuildingInfomationModel">
@@ -52,6 +72,22 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#Design"
                title="https://w3id.org/digitalconstruction/Information#Design">Design</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Certificate">
+      <h3>Certificate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Certificate</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -211,6 +247,38 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="LookaheadPlan">
+      <h3>LookaheadPlan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#LookaheadPlan</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Plan"
+               title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MasterPlan">
+      <h3>MasterPlan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#MasterPlan</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Plan"
+               title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Observation">
       <h3>Observation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -247,6 +315,16 @@ This section provides details for each class and property defined by Digital Con
                   title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LookaheadPlan"
+               title="https://w3id.org/digitalconstruction/Information#LookaheadPlan">LookaheadPlan</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MasterPlan"
+               title="https://w3id.org/digitalconstruction/Information#MasterPlan">MasterPlan</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WeekPlan"
+               title="https://w3id.org/digitalconstruction/Information#WeekPlan">WeekPlan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasConstraint"
@@ -258,6 +336,38 @@ This section provides details for each class and property defined by Digital Con
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPlannedActivity"
                title="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">hasPlannedActivity</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointCloud">
+      <h3>PointCloud<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#PointCloud</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WeekPlan">
+      <h3>WeekPlan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#WeekPlan</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Plan"
+               title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
