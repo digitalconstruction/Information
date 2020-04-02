@@ -79,6 +79,14 @@
                       rdfs:label "contractorObligation" .
 
 
+###  https://w3id.org/digitalconstruction/Information#hasAttachment
+:hasAttachment rdf:type owl:ObjectProperty ;
+               rdfs:domain :Message ;
+               rdfs:range <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+               rdfs:comment "An information content entity attached to the message" ;
+               rdfs:label "hasAttachment" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#hasClient
 :hasClient rdf:type owl:ObjectProperty ;
            rdfs:domain :Contract ;
@@ -132,6 +140,24 @@
                     rdfs:label "hasPlannedActivity" .
 
 
+###  https://w3id.org/digitalconstruction/Information#hasRecipient
+:hasRecipient rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isRecipientOf ;
+              rdfs:domain :Message ;
+              rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+              rdfs:comment "The agent that is the recipients of the message" ;
+              rdfs:label "hasRecipient" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasReply
+:hasReply rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isReplyTo ;
+          rdfs:domain :Message ;
+          rdfs:range :Message ;
+          rdfs:comment "A message that replies to this message" ;
+          rdfs:label "hasReply" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
           rdfs:domain :Issue ;
@@ -139,10 +165,120 @@
           rdfs:label "hasScope" .
 
 
+###  https://w3id.org/digitalconstruction/Information#hasSender
+:hasSender rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isSenderOf ;
+           rdfs:domain :Message ;
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+           rdfs:comment "The sender of a message" ;
+           rdfs:label "hasSender" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#hasSolution
 :hasSolution rdf:type owl:ObjectProperty ;
              rdfs:domain :Issue ;
              rdfs:label "hasSolution" .
+
+
+###  https://w3id.org/digitalconstruction/Information#isRecipientOf
+:isRecipientOf rdf:type owl:ObjectProperty ;
+               rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
+               rdfs:range :Message ;
+               rdfs:comment "A message that the agent has received" ;
+               rdfs:label "isRecipientOf" .
+
+
+###  https://w3id.org/digitalconstruction/Information#isReplyTo
+:isReplyTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Message ;
+           rdfs:range :Message ;
+           rdfs:comment "The message that this message is a reply to" ;
+           rdfs:label "isReplyTo" .
+
+
+###  https://w3id.org/digitalconstruction/Information#isSenderOf
+:isSenderOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
+            rdfs:range :Message ;
+            rdfs:label "isSenderOf" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/digitalconstruction/Information#hasMessageBody
+:hasMessageBody rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Message ;
+                rdfs:range xsd:string ;
+                rdfs:label "hasMessageBody" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasMessageSubject
+:hasMessageSubject rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Message ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "hasMessageSubject" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasNotificationImportance
+:hasNotificationImportance rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Notification ;
+                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                        owl:oneOf [ rdf:type rdf:List ;
+                                                    rdf:first "Alert" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "High" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "Low" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "Normal" ;
+                                                                                     rdf:rest rdf:nil
+                                                                                   ]
+                                                                        ]
+                                                             ]
+                                                  ]
+                                      ] ;
+                           rdfs:label "hasNotificationImportance" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasStatusValue
+:hasStatusValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :StatusUpdate ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "Completed" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "Enabled" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "Initial" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "Paused" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "Started" ;
+                                                                                     rdf:rest rdf:nil
+                                                                                   ]
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasWebAddress
+:hasWebAddress rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+               rdfs:range xsd:anyURI ;
+               rdfs:comment "An Web address (URI) from which the information content entity can be accessed" ;
+               rdfs:label "hasWebAddress" .
+
+
+###  https://w3id.org/digitalconstruction/Information#isReceiptRequired
+:isReceiptRequired rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Message ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:label "isReceiptRequired" .
 
 
 #################################################################
@@ -161,6 +297,13 @@
 :BuildingInfomationModel rdf:type owl:Class ;
                          rdfs:subClassOf :Design ;
                          rdfs:label "BuildingInformationModel" .
+
+
+###  https://w3id.org/digitalconstruction/Information#CausalRelationIssue
+:CausalRelationIssue rdf:type owl:Class ;
+                     rdfs:subClassOf :PlanningIssue ;
+                     rdfs:comment "The broken or threatened causal relation between activities. For example, an activity to clean up a space before painting is (or can be) followed by an activity that messes up the space again." ;
+                     rdfs:label "CausalRelationIssue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Certificate
@@ -183,6 +326,27 @@
         rdfs:label "Design" .
 
 
+###  https://w3id.org/digitalconstruction/Information#DesignChangeRequest
+:DesignChangeRequest rdf:type owl:Class ;
+                     rdfs:subClassOf :DesignIssue ;
+                     rdfs:comment "A need for a design change is detected" ;
+                     rdfs:label "DesignChangeRequest" .
+
+
+###  https://w3id.org/digitalconstruction/Information#DesignIssue
+:DesignIssue rdf:type owl:Class ;
+             rdfs:subClassOf :Issue ;
+             rdfs:comment "An issue concerning the design of a product (a building or some of its components or systems)" ;
+             rdfs:label "DesignIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue
+:DisturbanceAreaIssue rdf:type owl:Class ;
+                      rdfs:subClassOf :StakeholderIssue ;
+                      rdfs:comment "A disturbance (noise, dust, ...) at an area" ;
+                      rdfs:label "DisturbanceAreaIssue" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Drawing
 :Drawing rdf:type owl:Class ;
          rdfs:subClassOf :Design ;
@@ -194,6 +358,27 @@
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
        rdfs:comment "A occurence that happens with a time instant for obtaining the information." ;
        rdfs:label "Event" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ExecutionDelay
+:ExecutionDelay rdf:type owl:Class ;
+                rdfs:subClassOf :ExecutionIssue ;
+                rdfs:comment "The execution of an activity is behind its schedule" ;
+                rdfs:label "ExecutionDelay" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ExecutionFailure
+:ExecutionFailure rdf:type owl:Class ;
+                  rdfs:subClassOf :ExecutionIssue ;
+                  rdfs:comment "The execution of an activity fails to produce its intended effects" ;
+                  rdfs:label "ExecutionFailure" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ExecutionIssue
+:ExecutionIssue rdf:type owl:Class ;
+                rdfs:subClassOf :Issue ;
+                rdfs:comment "Issue in the execution of activities" ;
+                rdfs:label "ExecutionIssue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Image
@@ -222,11 +407,39 @@
             rdfs:label "MasterPlan" .
 
 
+###  https://w3id.org/digitalconstruction/Information#Message
+:Message rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+         rdfs:comment "Information content transferred from a sender to receivers" ,
+                      "Message" .
+
+
+###  https://w3id.org/digitalconstruction/Information#NonConformanceIssue
+:NonConformanceIssue rdf:type owl:Class ;
+                     rdfs:subClassOf :ProductIssue ;
+                     rdfs:comment "Issue that is about an entity that does not conform to its specification" ;
+                     rdfs:label "NonConformanceIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Notification
+:Notification rdf:type owl:Class ;
+              rdfs:subClassOf :Message ;
+              rdfs:comment "Notification is a message to inform recipients in a controlled manner about a situation they need to be aware of" ;
+              rdfs:label "Notification" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Observation
 :Observation rdf:type owl:Class ;
              rdfs:subClassOf :Event ;
              rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." ;
              rdfs:label "Observation" .
+
+
+###  https://w3id.org/digitalconstruction/Information#OrderingConflict
+:OrderingConflict rdf:type owl:Class ;
+                  rdfs:subClassOf :PlanningIssue ;
+                  rdfs:comment "Two activities cannot be ordered to satisfy the requirements of a plan" ;
+                  rdfs:label "OrderingConflict" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#Plan
@@ -236,10 +449,93 @@
       rdfs:label "Plan" .
 
 
+###  https://w3id.org/digitalconstruction/Information#PlanningIssue
+:PlanningIssue rdf:type owl:Class ;
+               rdfs:subClassOf :Issue ;
+               rdfs:comment "Issue concerning a plan" ;
+               rdfs:label "PlanningIssue" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#PointCloud
 :PointCloud rdf:type owl:Class ;
             rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
             rdfs:label "PointCloud" .
+
+
+###  https://w3id.org/digitalconstruction/Information#PreconditionIssue
+:PreconditionIssue rdf:type owl:Class ;
+                   rdfs:subClassOf :ExecutionIssue ;
+                   rdfs:comment "The preconditions of an activity are not satisfied at execution time" ;
+                   rdfs:label "PreconditionIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ProductIssue
+:ProductIssue rdf:type owl:Class ;
+              rdfs:subClassOf :Issue ;
+              rdfs:comment "Issue related to the product (e.g., a building or some of its components or systems)" ;
+              rdfs:label "ProductIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ResourceConflict
+:ResourceConflict rdf:type owl:Class ;
+                  rdfs:subClassOf :ExecutionIssue ;
+                  rdfs:comment "Activities require more resources than what are available" ;
+                  rdfs:label "ResourceConflict" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ResourceFailure
+:ResourceFailure rdf:type owl:Class ;
+                 rdfs:subClassOf :ExecutionIssue ;
+                 rdfs:comment "A resource has been broken and cannot be used for the execution of activities" ;
+                 rdfs:label "ResourceFailure" .
+
+
+###  https://w3id.org/digitalconstruction/Information#SafetyIssue
+:SafetyIssue rdf:type owl:Class ;
+             rdfs:subClassOf :ExecutionIssue ;
+             rdfs:comment "Execution poses a safety threat to some agents" ;
+             rdfs:label "SafetyIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ScopeIssue
+:ScopeIssue rdf:type owl:Class ;
+            rdfs:subClassOf :DesignIssue ;
+            rdfs:comment "The scope of the product is too large or too small. For instance, some necessary parts are missing" ;
+            rdfs:label "ScopeIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ServiceOutageIssue
+:ServiceOutageIssue rdf:type owl:Class ;
+                    rdfs:subClassOf :StakeholderIssue ;
+                    rdfs:comment "A non-functioning service" ;
+                    rdfs:label "ServiceOutageIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#StakeholderIssue
+:StakeholderIssue rdf:type owl:Class ;
+                  rdfs:subClassOf :Issue ;
+                  rdfs:comment "An issue related to the stakeholders of a project" ;
+                  rdfs:label "StakeholderIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#StatusUpdate
+:StatusUpdate rdf:type owl:Class ;
+              rdfs:subClassOf :Event ;
+              rdfs:label "StatusUpdate" .
+
+
+###  https://w3id.org/digitalconstruction/Information#UnachievedGoal
+:UnachievedGoal rdf:type owl:Class ;
+                rdfs:subClassOf :PlanningIssue ;
+                rdfs:comment "A plan issue concerning a goal that is not achieved by the plan" ;
+                rdfs:label "UnachievedGoal" .
+
+
+###  https://w3id.org/digitalconstruction/Information#UnexecutableActivity
+:UnexecutableActivity rdf:type owl:Class ;
+                      rdfs:subClassOf :PlanningIssue ;
+                      rdfs:comment "A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps." ;
+                      rdfs:label "UnexecutableActivity" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#WeekPlan

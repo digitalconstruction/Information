@@ -136,6 +136,18 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#hasAttachment -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasAttachment">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>An information content entity attached to the message</rdfs:comment>
+        <rdfs:label>hasAttachment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#hasClient -->
 
 
@@ -221,6 +233,32 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#hasRecipient -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasRecipient">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isRecipientOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:comment>The agent that is the recipients of the message</rdfs:comment>
+        <rdfs:label>hasRecipient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasReply -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasReply">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isReplyTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:comment>A message that replies to this message</rdfs:comment>
+        <rdfs:label>hasReply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#hasScope -->
 
 
@@ -232,6 +270,19 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#hasSender -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasSender">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isSenderOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:comment>The sender of a message</rdfs:comment>
+        <rdfs:label>hasSender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#hasSolution -->
 
 
@@ -239,6 +290,182 @@
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
         <rdfs:label>hasSolution</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#isRecipientOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isRecipientOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:comment>A message that the agent has received</rdfs:comment>
+        <rdfs:label>isRecipientOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#isReplyTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isReplyTo">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:comment>The message that this message is a reply to</rdfs:comment>
+        <rdfs:label>isReplyTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#isSenderOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isSenderOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:label>isSenderOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasMessageBody -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasMessageBody">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasMessageBody</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasMessageSubject -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasMessageSubject">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasMessageSubject</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasNotificationImportance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasNotificationImportance">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Notification"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Alert</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>High</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Low</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>hasNotificationImportance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasStatusValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasStatusValue">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#StatusUpdate"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Completed</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Enabled</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Initial</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Paused</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Started</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasWebAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasWebAddress">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment>An Web address (URI) from which the information content entity can be accessed</rdfs:comment>
+        <rdfs:label>hasWebAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#isReceiptRequired -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#isReceiptRequired">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>isReceiptRequired</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -280,6 +507,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#CausalRelationIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#CausalRelationIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+        <rdfs:comment>The broken or threatened causal relation between activities. For example, an activity to clean up a space before painting is (or can be) followed by an activity that messes up the space again.</rdfs:comment>
+        <rdfs:label>CausalRelationIssue</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Certificate -->
 
 
@@ -312,6 +550,39 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#DesignChangeRequest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DesignChangeRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#DesignIssue"/>
+        <rdfs:comment>A need for a design change is detected</rdfs:comment>
+        <rdfs:label>DesignChangeRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#DesignIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DesignIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+        <rdfs:comment>An issue concerning the design of a product (a building or some of its components or systems)</rdfs:comment>
+        <rdfs:label>DesignIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#StakeholderIssue"/>
+        <rdfs:comment>A disturbance (noise, dust, ...) at an area</rdfs:comment>
+        <rdfs:label>DisturbanceAreaIssue</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Drawing -->
 
 
@@ -329,6 +600,39 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
         <rdfs:comment>A occurence that happens with a time instant for obtaining the information.</rdfs:comment>
         <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ExecutionDelay -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionDelay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>The execution of an activity is behind its schedule</rdfs:comment>
+        <rdfs:label>ExecutionDelay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ExecutionFailure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionFailure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>The execution of an activity fails to produce its intended effects</rdfs:comment>
+        <rdfs:label>ExecutionFailure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ExecutionIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+        <rdfs:comment>Issue in the execution of activities</rdfs:comment>
+        <rdfs:label>ExecutionIssue</rdfs:label>
     </owl:Class>
     
 
@@ -375,6 +679,39 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#Message -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Message">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>Information content transferred from a sender to receivers</rdfs:comment>
+        <rdfs:comment>Message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#NonConformanceIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#NonConformanceIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ProductIssue"/>
+        <rdfs:comment>Issue that is about an entity that does not conform to its specification</rdfs:comment>
+        <rdfs:label>NonConformanceIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#Notification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Notification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:comment>Notification is a message to inform recipients in a controlled manner about a situation they need to be aware of</rdfs:comment>
+        <rdfs:label>Notification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Observation -->
 
 
@@ -382,6 +719,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Event"/>
         <rdfs:comment>Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA).</rdfs:comment>
         <rdfs:label>Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#OrderingConflict -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#OrderingConflict">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+        <rdfs:comment>Two activities cannot be ordered to satisfy the requirements of a plan</rdfs:comment>
+        <rdfs:label>OrderingConflict</rdfs:label>
     </owl:Class>
     
 
@@ -397,12 +745,143 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#PlanningIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PlanningIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+        <rdfs:comment>Issue concerning a plan</rdfs:comment>
+        <rdfs:label>PlanningIssue</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#PointCloud -->
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PointCloud">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
         <rdfs:label>PointCloud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#PreconditionIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PreconditionIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>The preconditions of an activity are not satisfied at execution time</rdfs:comment>
+        <rdfs:label>PreconditionIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ProductIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ProductIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+        <rdfs:comment>Issue related to the product (e.g., a building or some of its components or systems)</rdfs:comment>
+        <rdfs:label>ProductIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ResourceConflict -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ResourceConflict">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>Activities require more resources than what are available</rdfs:comment>
+        <rdfs:label>ResourceConflict</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ResourceFailure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ResourceFailure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>A resource has been broken and cannot be used for the execution of activities</rdfs:comment>
+        <rdfs:label>ResourceFailure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#SafetyIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#SafetyIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+        <rdfs:comment>Execution poses a safety threat to some agents</rdfs:comment>
+        <rdfs:label>SafetyIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ScopeIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ScopeIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#DesignIssue"/>
+        <rdfs:comment>The scope of the product is too large or too small. For instance, some necessary parts are missing</rdfs:comment>
+        <rdfs:label>ScopeIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#ServiceOutageIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ServiceOutageIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#StakeholderIssue"/>
+        <rdfs:comment>A non-functioning service</rdfs:comment>
+        <rdfs:label>ServiceOutageIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#StakeholderIssue -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#StakeholderIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+        <rdfs:comment>An issue related to the stakeholders of a project</rdfs:comment>
+        <rdfs:label>StakeholderIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#StatusUpdate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#StatusUpdate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Event"/>
+        <rdfs:label>StatusUpdate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#UnachievedGoal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#UnachievedGoal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+        <rdfs:comment>A plan issue concerning a goal that is not achieved by the plan</rdfs:comment>
+        <rdfs:label>UnachievedGoal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#UnexecutableActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#UnexecutableActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+        <rdfs:comment>A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps.</rdfs:comment>
+        <rdfs:label>UnexecutableActivity</rdfs:label>
     </owl:Class>
     
 
