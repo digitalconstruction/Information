@@ -73,9 +73,7 @@ This section provides details for each class and property defined by Digital Con
       </li>
       <li>
          <a href="#Message"
-            title="https://w3id.org/digitalconstruction/Information#Message">
-            <span>message</span>
-         </a>
+            title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
       </li>
       <li>
          <a href="#NonConformanceIssue"
@@ -228,10 +226,10 @@ This section provides details for each class and property defined by Digital Con
                title="https://w3id.org/digitalconstruction/Information#ClientObligation">clientObligation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ContractorObligation"
                title="https://w3id.org/digitalconstruction/Information#ContractorObligation">contractorObligation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasContractor"
-               title="https://w3id.org/digitalconstruction/Information#hasContractor">has contractor</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasClient"
                title="https://w3id.org/digitalconstruction/Information#hasClient">hasClient</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasContractor"
+               title="https://w3id.org/digitalconstruction/Information#hasContractor">hasContractor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -547,7 +545,7 @@ This section provides details for each class and property defined by Digital Con
       </dl>
    </div>
    <div class="entity" id="Message">
-      <h3>message<sup class="type-c" title="class">c</sup>
+      <h3>Message<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -636,7 +634,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>has super-classes</dt>
          <dd>
             <a href="#Message"
-               title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+               title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -956,7 +954,7 @@ This section provides details for each class and property defined by Digital Con
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasStatusValue"
-               title="https://w3id.org/digitalconstruction/Information#hasStatusValue">has status value</a>
+               title="https://w3id.org/digitalconstruction/Information#hasStatusValue">hasStatusValue</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -1027,12 +1025,6 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#ContractorObligation">contractorObligation</a>
       </li>
       <li>
-         <a href="#hasContractor"
-            title="https://w3id.org/digitalconstruction/Information#hasContractor">
-            <span>has contractor</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasAttachment"
             title="https://w3id.org/digitalconstruction/Information#hasAttachment">hasAttachment</a>
       </li>
@@ -1043,6 +1035,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#hasConstraint"
             title="https://w3id.org/digitalconstruction/Information#hasConstraint">hasConstraint</a>
+      </li>
+      <li>
+         <a href="#hasContractor"
+            title="https://w3id.org/digitalconstruction/Information#hasContractor">hasContractor</a>
       </li>
       <li>
          <a href="#hasEvaluationCriteria"
@@ -1143,29 +1139,6 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasContractor">
-      <h3>has contractor<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasContractor</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Contract"
-                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasAttachment">
       <h3>hasAttachment<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1181,7 +1154,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1235,6 +1208,29 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <span class="dotted"
                      title="https://w3id.org/digitalconstruction/Variables#Constraint">constraint</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasContractor">
+      <h3>hasContractor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasContractor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Contract"
+                  title="https://w3id.org/digitalconstruction/Information#Contract">Contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
             </dd>
          </dl>
       </div>
@@ -1360,7 +1356,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1392,13 +1388,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1447,7 +1443,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1502,7 +1498,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has range</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1529,13 +1525,13 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1568,7 +1564,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has range</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1584,12 +1580,6 @@ This section provides details for each class and property defined by Digital Con
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasStatusValue"
-            title="https://w3id.org/digitalconstruction/Information#hasStatusValue">
-            <span>has status value</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasMessageBody"
             title="https://w3id.org/digitalconstruction/Information#hasMessageBody">hasMessageBody</a>
       </li>
@@ -1602,6 +1592,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#hasNotificationImportance">hasNotificationImportance</a>
       </li>
       <li>
+         <a href="#hasStatusValue"
+            title="https://w3id.org/digitalconstruction/Information#hasStatusValue">hasStatusValue</a>
+      </li>
+      <li>
          <a href="#hasWebAddress"
             title="https://w3id.org/digitalconstruction/Information#hasWebAddress">hasWebAddress</a>
       </li>
@@ -1610,26 +1604,6 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#isReceiptRequired">isReceiptRequired</a>
       </li>
    </ul>
-   <div class="entity" id="hasStatusValue">
-      <h3>has status value<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasStatusValue</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#StatusUpdate"
-                  title="https://w3id.org/digitalconstruction/Information#StatusUpdate">StatusUpdate</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>{ "Completed" , "Enabled" , "Initial" , "Paused" , "Started" }</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasMessageBody">
       <h3>hasMessageBody<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1642,7 +1616,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1664,7 +1638,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1691,6 +1665,26 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>{ "Alert" , "High" , "Low" , "Normal" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStatusValue">
+      <h3>hasStatusValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasStatusValue</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#StatusUpdate"
+                  title="https://w3id.org/digitalconstruction/Information#StatusUpdate">StatusUpdate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>{ "Completed" , "Enabled" , "Initial" , "Paused" , "Started" }</dd>
          </dl>
       </div>
    </div>
@@ -1731,7 +1725,7 @@ This section provides details for each class and property defined by Digital Con
             <dt>has domain</dt>
             <dd>
                <a href="#Message"
-                  title="https://w3id.org/digitalconstruction/Information#Message">message</a>
+                  title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

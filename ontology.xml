@@ -176,6 +176,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasContractor">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Contract"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:label>hasContractor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -442,6 +443,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:label>hasStatusValue</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -685,7 +687,7 @@
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Message">
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
         <rdfs:comment>Information content transferred from a sender to receivers</rdfs:comment>
-        <rdfs:comment>Message</rdfs:comment>
+        <rdfs:label>Message</rdfs:label>
     </owl:Class>
     
 

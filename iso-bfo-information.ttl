@@ -104,7 +104,8 @@
 ###  https://w3id.org/digitalconstruction/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
-               rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
+               rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+               rdfs:label "hasContractor" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
@@ -263,7 +264,8 @@
                                                              ]
                                                   ]
                                        ]
-                           ] .
+                           ] ;
+                rdfs:label "hasStatusValue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasWebAddress
@@ -410,8 +412,8 @@
 ###  https://w3id.org/digitalconstruction/Information#Message
 :Message rdf:type owl:Class ;
          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
-         rdfs:comment "Information content transferred from a sender to receivers" ,
-                      "Message" .
+         rdfs:comment "Information content transferred from a sender to receivers" ;
+         rdfs:label "Message" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#NonConformanceIssue
