@@ -1,6 +1,6 @@
 <https://w3id.org/digitalconstruction/Information> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
-<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities#> .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/elements/1.1/title> "Digital Construction Information" .
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/terms/created> "2020-01-12" .
@@ -82,12 +82,6 @@
 <https://w3id.org/digitalconstruction/Information#hasClient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Agent> .
 <https://w3id.org/digitalconstruction/Information#hasClient> <http://www.w3.org/2000/01/rdf-schema#label> "hasClient" .
 # 
-# https://w3id.org/digitalconstruction/Information#hasConstraint
-<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
-<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Variables#Constraint> .
-<https://w3id.org/digitalconstruction/Information#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraint" .
-# 
 # https://w3id.org/digitalconstruction/Information#hasContractor
 <https://w3id.org/digitalconstruction/Information#hasContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Information#hasContractor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Contract> .
@@ -116,11 +110,24 @@
 <https://w3id.org/digitalconstruction/Information#hasParentIssue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#Issue> .
 <https://w3id.org/digitalconstruction/Information#hasParentIssue> <http://www.w3.org/2000/01/rdf-schema#label> "hasParentIssue" .
 # 
+# https://w3id.org/digitalconstruction/Information#hasPlanConstraint
+<https://w3id.org/digitalconstruction/Information#hasPlanConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasPlanConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+<https://w3id.org/digitalconstruction/Information#hasPlanConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Variables#Constraint> .
+<https://w3id.org/digitalconstruction/Information#hasPlanConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlanConstraint" .
+# 
 # https://w3id.org/digitalconstruction/Information#hasPlannedActivity
 <https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf> .
 <https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
 <https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 <https://w3id.org/digitalconstruction/Information#hasPlannedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlannedActivity" .
+# 
+# https://w3id.org/digitalconstruction/Information#hasPlanningIssue
+<https://w3id.org/digitalconstruction/Information#hasPlanningIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasPlanningIssue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+<https://w3id.org/digitalconstruction/Information#hasPlanningIssue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#PlanningIssue> .
+<https://w3id.org/digitalconstruction/Information#hasPlanningIssue> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlanningIssue" .
 # 
 # https://w3id.org/digitalconstruction/Information#hasRecipient
 <https://w3id.org/digitalconstruction/Information#hasRecipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -156,6 +163,11 @@
 <https://w3id.org/digitalconstruction/Information#hasSolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Information#hasSolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Issue> .
 <https://w3id.org/digitalconstruction/Information#hasSolution> <http://www.w3.org/2000/01/rdf-schema#label> "hasSolution" .
+# 
+# https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf
+<https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Activity> .
+<https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#Plan> .
 # 
 # https://w3id.org/digitalconstruction/Information#isRecipientOf
 <https://w3id.org/digitalconstruction/Information#isRecipientOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -312,7 +324,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue
 <https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#StakeholderIssue> .
+<https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#ExecutionIssue> .
 <https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A disturbance (noise, dust, ...) at an area" .
 <https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue> <http://www.w3.org/2000/01/rdf-schema#label> "DisturbanceAreaIssue" .
 # 
@@ -444,6 +456,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#SafetyIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution poses a safety threat to some agents" .
 <https://w3id.org/digitalconstruction/Information#SafetyIssue> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyIssue" .
 # 
+# https://w3id.org/digitalconstruction/Information#Scenario
+<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building." .
+<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#label> "Scenario" .
+# 
 # https://w3id.org/digitalconstruction/Information#ScopeIssue
 <https://w3id.org/digitalconstruction/Information#ScopeIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Information#ScopeIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#DesignIssue> .
@@ -452,7 +470,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Information#ServiceOutageIssue
 <https://w3id.org/digitalconstruction/Information#ServiceOutageIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#ServiceOutageIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#StakeholderIssue> .
+<https://w3id.org/digitalconstruction/Information#ServiceOutageIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#ExecutionIssue> .
 <https://w3id.org/digitalconstruction/Information#ServiceOutageIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "A non-functioning service" .
 <https://w3id.org/digitalconstruction/Information#ServiceOutageIssue> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceOutageIssue" .
 # 

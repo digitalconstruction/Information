@@ -8,7 +8,7 @@
 
 <https://w3id.org/digitalconstruction/Information> rdf:type owl:Ontology ;
                                                     owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
-                                                                <https://w3id.org/digitalconstruction/Entities#> ;
+                                                                <https://w3id.org/digitalconstruction/Entities> ;
                                                     <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
                                                     <http://purl.org/dc/elements/1.1/title> "Digital Construction Information" ;
                                                     <http://purl.org/dc/terms/created> "2020-01-12" ;
@@ -94,13 +94,6 @@
            rdfs:label "hasClient" .
 
 
-###  https://w3id.org/digitalconstruction/Information#hasConstraint
-:hasConstraint rdf:type owl:ObjectProperty ;
-               rdfs:domain :Plan ;
-               rdfs:range <https://w3id.org/digitalconstruction/Variables#Constraint> ;
-               rdfs:label "hasConstraint" .
-
-
 ###  https://w3id.org/digitalconstruction/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
@@ -134,11 +127,26 @@
                 rdfs:label "hasParentIssue" .
 
 
+###  https://w3id.org/digitalconstruction/Information#hasPlanConstraint
+:hasPlanConstraint rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Plan ;
+                   rdfs:range <https://w3id.org/digitalconstruction/Variables#Constraint> ;
+                   rdfs:label "hasPlanConstraint" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#hasPlannedActivity
 :hasPlannedActivity rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isPlannedActiviyOf ;
                     rdfs:domain :Plan ;
                     rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
                     rdfs:label "hasPlannedActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasPlanningIssue
+:hasPlanningIssue rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Plan ;
+                  rdfs:range :PlanningIssue ;
+                  rdfs:label "hasPlanningIssue" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#hasRecipient
@@ -179,6 +187,12 @@
 :hasSolution rdf:type owl:ObjectProperty ;
              rdfs:domain :Issue ;
              rdfs:label "hasSolution" .
+
+
+###  https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf
+:isPlannedActiviyOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                    rdfs:range :Plan .
 
 
 ###  https://w3id.org/digitalconstruction/Information#isRecipientOf
@@ -344,7 +358,7 @@
 
 ###  https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue
 :DisturbanceAreaIssue rdf:type owl:Class ;
-                      rdfs:subClassOf :StakeholderIssue ;
+                      rdfs:subClassOf :ExecutionIssue ;
                       rdfs:comment "A disturbance (noise, dust, ...) at an area" ;
                       rdfs:label "DisturbanceAreaIssue" .
 
@@ -499,6 +513,13 @@
              rdfs:label "SafetyIssue" .
 
 
+###  https://w3id.org/digitalconstruction/Information#Scenario
+:Scenario rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+          rdfs:comment "A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building." ;
+          rdfs:label "Scenario" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#ScopeIssue
 :ScopeIssue rdf:type owl:Class ;
             rdfs:subClassOf :DesignIssue ;
@@ -508,7 +529,7 @@
 
 ###  https://w3id.org/digitalconstruction/Information#ServiceOutageIssue
 :ServiceOutageIssue rdf:type owl:Class ;
-                    rdfs:subClassOf :StakeholderIssue ;
+                    rdfs:subClassOf :ExecutionIssue ;
                     rdfs:comment "A non-functioning service" ;
                     rdfs:label "ServiceOutageIssue" .
 

@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Information">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities#"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities"/>
         <dc:date>2020-03-20</dc:date>
         <dc:title>Digital Construction Information</dc:title>
         <terms:created>2020-01-12</terms:created>
@@ -159,17 +159,6 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasConstraint -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasConstraint">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Variables#Constraint"/>
-        <rdfs:label>hasConstraint</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/digitalconstruction/Information#hasContractor -->
 
 
@@ -223,13 +212,36 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#hasPlanConstraint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlanConstraint">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Variables#Constraint"/>
+        <rdfs:label>hasPlanConstraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#hasPlannedActivity -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
         <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
         <rdfs:label>hasPlannedActivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#hasPlanningIssue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlanningIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+        <rdfs:label>hasPlanningIssue</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -290,6 +302,16 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasSolution">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
         <rdfs:label>hasSolution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
     </owl:ObjectProperty>
     
 
@@ -578,7 +600,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#StakeholderIssue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
         <rdfs:comment>A disturbance (noise, dust, ...) at an area</rdfs:comment>
         <rdfs:label>DisturbanceAreaIssue</rdfs:label>
     </owl:Class>
@@ -823,6 +845,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#Scenario -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Scenario">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building.</rdfs:comment>
+        <rdfs:label>Scenario</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#ScopeIssue -->
 
 
@@ -838,7 +871,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ServiceOutageIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#StakeholderIssue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
         <rdfs:comment>A non-functioning service</rdfs:comment>
         <rdfs:label>ServiceOutageIssue</rdfs:label>
     </owl:Class>
