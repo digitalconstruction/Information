@@ -227,6 +227,18 @@
     "@id" : "https://w3id.org/digitalconstruction/Information#Design"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EvaluationCriteria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Information#Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -377,6 +389,18 @@
     "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#PerformanceIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PerformanceIndicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Information#Plan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -432,6 +456,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#Recommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Recommendation is a message in which the sender proposes a course of action to the recipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#ResourceConflict",
@@ -606,6 +642,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasEvaluationCriteria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasHandler",

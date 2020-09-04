@@ -40,6 +40,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#Drawing">Drawing</a>
       </li>
       <li>
+         <a href="#EvaluationCriteria"
+            title="https://w3id.org/digitalconstruction/Information#EvaluationCriteria">EvaluationCriteria</a>
+      </li>
+      <li>
          <a href="#Event"
             title="https://w3id.org/digitalconstruction/Information#Event">Event</a>
       </li>
@@ -92,6 +96,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#OrderingConflict">OrderingConflict</a>
       </li>
       <li>
+         <a href="#PerformanceIndicator"
+            title="https://w3id.org/digitalconstruction/Information#PerformanceIndicator">PerformanceIndicator</a>
+      </li>
+      <li>
          <a href="#Plan"
             title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
       </li>
@@ -110,6 +118,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#ProductIssue"
             title="https://w3id.org/digitalconstruction/Information#ProductIssue">ProductIssue</a>
+      </li>
+      <li>
+         <a href="#Recommendation"
+            title="https://w3id.org/digitalconstruction/Information#Recommendation">Recommendation</a>
       </li>
       <li>
          <a href="#ResourceConflict"
@@ -346,6 +358,37 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="EvaluationCriteria">
+      <h3>EvaluationCriteria<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#EvaluationCriteria</p>
+      <div class="comment">
+         <span class="markdown">Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PerformanceIndicator"
+               title="https://w3id.org/digitalconstruction/Information#PerformanceIndicator">PerformanceIndicator</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEvaluationCriteria"
+               title="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">hasEvaluationCriteria</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Event">
       <h3>Event<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -573,6 +616,8 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#Notification"
                title="https://w3id.org/digitalconstruction/Information#Notification">Notification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Recommendation"
+               title="https://w3id.org/digitalconstruction/Information#Recommendation">Recommendation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -687,6 +732,25 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#PlanningIssue"
                title="https://w3id.org/digitalconstruction/Information#PlanningIssue">PlanningIssue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PerformanceIndicator">
+      <h3>PerformanceIndicator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#PerformanceIndicator</p>
+      <div class="comment">
+         <span class="markdown">Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EvaluationCriteria"
+               title="https://w3id.org/digitalconstruction/Information#EvaluationCriteria">EvaluationCriteria</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -833,6 +897,25 @@ This section provides details for each class and property defined by Digital Con
          <dd>
             <a href="#NonConformanceIssue"
                title="https://w3id.org/digitalconstruction/Information#NonConformanceIssue">NonConformanceIssue</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Recommendation">
+      <h3>Recommendation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Recommendation</p>
+      <div class="comment">
+         <span class="markdown">Recommendation is a message in which the sender proposes a course of action to the recipient</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Message"
+               title="https://w3id.org/digitalconstruction/Information#Message">Message</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1268,6 +1351,12 @@ This section provides details for each class and property defined by Digital Con
             <dd>
                <a href="#Plan"
                   title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EvaluationCriteria"
+                  title="https://w3id.org/digitalconstruction/Information#EvaluationCriteria">EvaluationCriteria</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

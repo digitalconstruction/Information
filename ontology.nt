@@ -91,6 +91,7 @@
 # https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
 <https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#Plan> .
+<https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#EvaluationCriteria> .
 <https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvaluationCriteria" .
 # 
 # https://w3id.org/digitalconstruction/Information#hasHandler
@@ -333,6 +334,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#Drawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Design> .
 <https://w3id.org/digitalconstruction/Information#Drawing> <http://www.w3.org/2000/01/rdf-schema#label> "Drawing" .
 # 
+# https://w3id.org/digitalconstruction/Information#EvaluationCriteria
+<https://w3id.org/digitalconstruction/Information#EvaluationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#EvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#EvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured." .
+<https://w3id.org/digitalconstruction/Information#EvaluationCriteria> <http://www.w3.org/2000/01/rdf-schema#label> "EvaluationCriteria" .
+# 
 # https://w3id.org/digitalconstruction/Information#Event
 <https://w3id.org/digitalconstruction/Information#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Information#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
@@ -409,6 +416,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#OrderingConflict> <http://www.w3.org/2000/01/rdf-schema#comment> "Two activities cannot be ordered to satisfy the requirements of a plan" .
 <https://w3id.org/digitalconstruction/Information#OrderingConflict> <http://www.w3.org/2000/01/rdf-schema#label> "OrderingConflict" .
 # 
+# https://w3id.org/digitalconstruction/Information#PerformanceIndicator
+<https://w3id.org/digitalconstruction/Information#PerformanceIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#PerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#EvaluationCriteria> .
+<https://w3id.org/digitalconstruction/Information#PerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements" .
+<https://w3id.org/digitalconstruction/Information#PerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "PerformanceIndicator" .
+# 
 # https://w3id.org/digitalconstruction/Information#Plan
 <https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
@@ -437,6 +450,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#ProductIssue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Issue> .
 <https://w3id.org/digitalconstruction/Information#ProductIssue> <http://www.w3.org/2000/01/rdf-schema#comment> "Issue related to the product (e.g., a building or some of its components or systems)" .
 <https://w3id.org/digitalconstruction/Information#ProductIssue> <http://www.w3.org/2000/01/rdf-schema#label> "ProductIssue" .
+# 
+# https://w3id.org/digitalconstruction/Information#Recommendation
+<https://w3id.org/digitalconstruction/Information#Recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Recommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Message> .
+<https://w3id.org/digitalconstruction/Information#Recommendation> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommendation is a message in which the sender proposes a course of action to the recipient" .
+<https://w3id.org/digitalconstruction/Information#Recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "Recommendation" .
 # 
 # https://w3id.org/digitalconstruction/Information#ResourceConflict
 <https://w3id.org/digitalconstruction/Information#ResourceConflict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

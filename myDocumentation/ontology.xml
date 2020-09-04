@@ -175,6 +175,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">
         <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#EvaluationCriteria"/>
         <rdfs:label>hasEvaluationCriteria</rdfs:label>
     </owl:ObjectProperty>
     
@@ -617,6 +618,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#EvaluationCriteria -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#EvaluationCriteria">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured.</rdfs:comment>
+        <rdfs:label>EvaluationCriteria</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Event -->
 
 
@@ -758,6 +770,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#PerformanceIndicator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PerformanceIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#EvaluationCriteria"/>
+        <rdfs:comment>Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements</rdfs:comment>
+        <rdfs:label>PerformanceIndicator</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#Plan -->
 
 
@@ -808,6 +831,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
         <rdfs:comment>Issue related to the product (e.g., a building or some of its components or systems)</rdfs:comment>
         <rdfs:label>ProductIssue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#Recommendation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Recommendation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:comment>Recommendation is a message in which the sender proposes a course of action to the recipient</rdfs:comment>
+        <rdfs:label>Recommendation</rdfs:label>
     </owl:Class>
     
 

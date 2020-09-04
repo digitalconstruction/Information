@@ -104,6 +104,7 @@
 ###  https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
 :hasEvaluationCriteria rdf:type owl:ObjectProperty ;
                        rdfs:domain :Plan ;
+                       rdfs:range :EvaluationCriteria ;
                        rdfs:label "hasEvaluationCriteria" .
 
 
@@ -369,6 +370,13 @@
          rdfs:label "Drawing" .
 
 
+###  https://w3id.org/digitalconstruction/Information#EvaluationCriteria
+:EvaluationCriteria rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+                    rdfs:comment "Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured." ;
+                    rdfs:label "EvaluationCriteria" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Event
 :Event rdf:type owl:Class ;
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
@@ -458,6 +466,13 @@
                   rdfs:label "OrderingConflict" .
 
 
+###  https://w3id.org/digitalconstruction/Information#PerformanceIndicator
+:PerformanceIndicator rdf:type owl:Class ;
+                      rdfs:subClassOf :EvaluationCriteria ;
+                      rdfs:comment "Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements" ;
+                      rdfs:label "PerformanceIndicator" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Plan
 :Plan rdf:type owl:Class ;
       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
@@ -490,6 +505,13 @@
               rdfs:subClassOf :Issue ;
               rdfs:comment "Issue related to the product (e.g., a building or some of its components or systems)" ;
               rdfs:label "ProductIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Recommendation
+:Recommendation rdf:type owl:Class ;
+                rdfs:subClassOf :Message ;
+                rdfs:comment "Recommendation is a message in which the sender proposes a course of action to the recipient" ;
+                rdfs:label "Recommendation" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#ResourceConflict
