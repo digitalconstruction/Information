@@ -470,6 +470,18 @@
     "@id" : "https://w3id.org/digitalconstruction/Information#Message"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#RegulatoryOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RegulatoryOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Information#ResourceConflict",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -585,6 +597,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#Video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#WeekPlan",
@@ -855,6 +876,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#imposedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#RegulatoryOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "imposedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf",

@@ -307,6 +307,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#imposedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#imposedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#RegulatoryOrder"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+        <rdfs:label>imposedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf -->
 
 
@@ -846,6 +857,17 @@
     
 
 
+    <!-- https://w3id.org/digitalconstruction/Information#RegulatoryOrder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#RegulatoryOrder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:comment>Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)</rdfs:comment>
+        <rdfs:label>RegulatoryOrder</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/digitalconstruction/Information#ResourceConflict -->
 
 
@@ -951,6 +973,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
         <rdfs:comment>A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps.</rdfs:comment>
         <rdfs:label>UnexecutableActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/digitalconstruction/Information#Video -->
+
+
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Video">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <rdfs:label>Video</rdfs:label>
     </owl:Class>
     
 

@@ -124,6 +124,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#Recommendation">Recommendation</a>
       </li>
       <li>
+         <a href="#RegulatoryOrder"
+            title="https://w3id.org/digitalconstruction/Information#RegulatoryOrder">RegulatoryOrder</a>
+      </li>
+      <li>
          <a href="#ResourceConflict"
             title="https://w3id.org/digitalconstruction/Information#ResourceConflict">ResourceConflict</a>
       </li>
@@ -162,6 +166,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#UnexecutableActivity"
             title="https://w3id.org/digitalconstruction/Information#UnexecutableActivity">UnexecutableActivity</a>
+      </li>
+      <li>
+         <a href="#Video"
+            title="https://w3id.org/digitalconstruction/Information#Video">Video</a>
       </li>
       <li>
          <a href="#WeekPlan"
@@ -920,6 +928,31 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="RegulatoryOrder">
+      <h3>RegulatoryOrder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#RegulatoryOrder</p>
+      <div class="comment">
+         <span class="markdown">Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#imposedBy"
+               title="https://w3id.org/digitalconstruction/Information#imposedBy">imposedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ResourceConflict">
       <h3>ResourceConflict<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1113,6 +1146,22 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Video">
+      <h3>Video<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Video</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="WeekPlan">
       <h3>WeekPlan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1199,6 +1248,10 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#hasSolution"
             title="https://w3id.org/digitalconstruction/Information#hasSolution">hasSolution</a>
+      </li>
+      <li>
+         <a href="#imposedBy"
+            title="https://w3id.org/digitalconstruction/Information#imposedBy">imposedBy</a>
       </li>
       <li>
          <a href="#isPlannedActiviyOf"
@@ -1636,6 +1689,29 @@ This section provides details for each class and property defined by Digital Con
                <a href="#Issue"
                   title="https://w3id.org/digitalconstruction/Information#Issue">Issue</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="imposedBy">
+      <h3>imposedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#imposedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RegulatoryOrder"
+                  title="https://w3id.org/digitalconstruction/Information#RegulatoryOrder">RegulatoryOrder</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
             </dd>
          </dl>
       </div>

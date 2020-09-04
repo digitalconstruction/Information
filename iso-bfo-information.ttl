@@ -190,6 +190,13 @@
              rdfs:label "hasSolution" .
 
 
+###  https://w3id.org/digitalconstruction/Information#imposedBy
+:imposedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :RegulatoryOrder ;
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+           rdfs:label "imposedBy" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf
 :isPlannedActiviyOf rdf:type owl:ObjectProperty ;
                     rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> ;
@@ -514,6 +521,13 @@
                 rdfs:label "Recommendation" .
 
 
+###  https://w3id.org/digitalconstruction/Information#RegulatoryOrder
+:RegulatoryOrder rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+                 rdfs:comment "Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)" ;
+                 rdfs:label "RegulatoryOrder" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#ResourceConflict
 :ResourceConflict rdf:type owl:Class ;
                   rdfs:subClassOf :ExecutionIssue ;
@@ -581,6 +595,12 @@
                       rdfs:subClassOf :PlanningIssue ;
                       rdfs:comment "A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps." ;
                       rdfs:label "UnexecutableActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Video
+:Video rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+       rdfs:label "Video" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#WeekPlan
