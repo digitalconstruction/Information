@@ -1,0 +1,220 @@
+@prefix : <https://w3id.org/digitalconstruction/Information#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/digitalconstruction/Information> .
+
+<https://w3id.org/digitalconstruction/Information> rdf:type owl:Ontology ;
+                                                    owl:imports <https://w3id.org/digitalconstruction/Entities#> ;
+                                                    <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
+                                                    <http://purl.org/dc/elements/1.1/title> "Digital Construction Information" ;
+                                                    <http://purl.org/dc/terms/created> "2020-01-12" ;
+                                                    <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
+                                                                                       "Yuan Zheng" ;
+                                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" ;
+                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Information" ;
+                                                    rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
+                                                    rdfs:label "Digital Construction Information" ;
+                                                    rdfs:seeAlso <https://w3id.org/digitalconstruction> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/digitalconstruction/Information#ClientObligation
+:ClientObligation rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Contract ;
+                  rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                  rdfs:label "clientObligation" .
+
+
+###  https://w3id.org/digitalconstruction/Information#ContractorObligation
+:ContractorObligation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Contract ;
+                      rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                      rdfs:label "contractorObligation" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasClient
+:hasClient rdf:type owl:ObjectProperty ;
+           rdfs:domain :Contract ;
+           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+           rdfs:label "hasClient" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ;
+               rdfs:domain :Plan ;
+               rdfs:range <https://w3id.org/digitalconstruction/Variables#Constraint> ;
+               rdfs:label "hasConstraint" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasContractor
+:hasContractor rdf:type owl:ObjectProperty ;
+               rdfs:domain :Contract ;
+               rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria
+:hasEvaluationCriteria rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Plan ;
+                       rdfs:label "hasEvaluationCriteria" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasHandler
+:hasHandler rdf:type owl:ObjectProperty ;
+            rdfs:domain :Issue ;
+            rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+            rdfs:label "hasHandler" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasObjective
+:hasObjective rdf:type owl:ObjectProperty ;
+              rdfs:domain :Plan ;
+              rdfs:label "hasObjective" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasParentIssue
+:hasParentIssue rdf:type owl:ObjectProperty ;
+                rdfs:domain :Issue ;
+                rdfs:range :Issue ;
+                rdfs:label "hasParentIssue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasPlannedActivity
+:hasPlannedActivity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Plan ;
+                    rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                    rdfs:label "hasPlannedActivity" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:domain :Issue ;
+          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+          rdfs:label "hasScope" .
+
+
+###  https://w3id.org/digitalconstruction/Information#hasSolution
+:hasSolution rdf:type owl:ObjectProperty ;
+             rdfs:domain :Issue ;
+             rdfs:label "hasSolution" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> owl:equivalentClass <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+
+
+###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
+<https://w3id.org/digitalconstruction/Entities#InformationContentEntity> rdf:type owl:Class .
+
+
+###  https://w3id.org/digitalconstruction/Information#BuildingInfomationModel
+:BuildingInfomationModel rdf:type owl:Class ;
+                         rdfs:subClassOf :Design ;
+                         rdfs:label "BuildingInformationModel" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Contract
+:Contract rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+          rdfs:comment "An agreement that specifies the mutual obligations of a client and a contractor." ;
+          rdfs:label "Contract" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Design
+:Design rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+        rdfs:comment "A specification of the construction products." ;
+        rdfs:label "Design" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Drawing
+:Drawing rdf:type owl:Class ;
+         rdfs:subClassOf :Design ;
+         rdfs:label "Drawing" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+       rdfs:comment "A occurence that happens with a time instant for obtaining the information." ;
+       rdfs:label "Event" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+       rdfs:comment "An information content entity containing visual data. For example, a photograph." ;
+       rdfs:label "Image" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Issue
+:Issue rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+       rdfs:comment "A detected problem that requires an action." ;
+       rdfs:label "Issue" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Observation
+:Observation rdf:type owl:Class ;
+             rdfs:subClassOf :Event ;
+             rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." ;
+             rdfs:label "Observation" .
+
+
+###  https://w3id.org/digitalconstruction/Information#Plan
+:Plan rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+      rdfs:comment "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network." ;
+      rdfs:label "Plan" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
