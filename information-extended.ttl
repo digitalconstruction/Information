@@ -1,22 +1,25 @@
 @prefix : <https://w3id.org/digitalconstruction/Information#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/digitalconstruction/Information> .
 
 <https://w3id.org/digitalconstruction/Information> rdf:type owl:Ontology ;
                                                     owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
                                                                 <https://w3id.org/digitalconstruction/Entities> ;
-                                                    <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
-                                                    <http://purl.org/dc/elements/1.1/title> "Digital Construction Information" ;
-                                                    <http://purl.org/dc/terms/created> "2020-01-12" ;
-                                                    <http://purl.org/dc/terms/creator> "Seppo Törmä" ,
-                                                                                       "Yuan Zheng" ;
-                                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" ;
-                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Information" ;
+                                                    dc:date "2020-03-20" ;
+                                                    dc:title "Digital Construction Information" ;
+                                                    terms:created "2020-01-12" ;
+                                                    terms:creator "Seppo Törmä" ,
+                                                                  "Yuan Zheng" ;
+                                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                    vann:preferredNamespacePrefix "dici" ;
+                                                    vann:preferredNamespaceUri "https://w3id.org/digitalconstruction/Information" ;
                                                     rdfs:comment "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ;
                                                     rdfs:label "Digital Construction Information" ;
                                                     rdfs:seeAlso <https://w3id.org/digitalconstruction> .
@@ -26,39 +29,39 @@
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
-<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+dc:date rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+terms:abstract rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+terms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+terms:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+terms:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -627,4 +630,4 @@ EXAMPLE Including sub-directory, information file (including model, document, ta
           rdfs:label "WeekPlan" .
 
 
-###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

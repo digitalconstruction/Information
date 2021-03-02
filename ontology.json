@@ -29,11 +29,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://purl.obolibrary.org/obo/IAO_0000030",
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
-  } ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -90,7 +85,7 @@
     "@value" : "https://w3id.org/digitalconstruction/Information"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction."
+    "@value" : "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Digital Construction Information"
@@ -104,7 +99,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#BuildingInfomationModel",
+  "@id" : "https://w3id.org/digitalconstruction/Information#BuildingInformationModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BuildingInformationModel"
@@ -179,7 +174,7 @@
     "@value" : "Design"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#DesignChangeRequest",
@@ -299,6 +294,17 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
   } ]
 }, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "InformationContainer is a named persistent set of information (ISO 19650-1 3.3.1) retrievable from within a file, system or application storage hierarchy (ISO 19650-1 3.3.12)\n\nEXAMPLE Including sub-directory, information file (including model, document, table, schedule), or distinct sub-set of an information file such as a chapter or section, layer or symbol."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Contexts#Context"
+  }, {
+    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+  } ]
+}, {
   "@id" : "https://w3id.org/digitalconstruction/Information#Issue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -410,7 +416,7 @@
     "@value" : "Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue",
@@ -527,7 +533,7 @@
     "@value" : "Scenario"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#ScopeIssue",
@@ -573,6 +579,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#Stream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stream"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#UnachievedGoal",
@@ -810,6 +825,18 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Information#isReplyTo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/digitalconstruction/Information#hasRootObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/digitalconstruction/Information#InformationContainer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRootObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Information#hasScope",

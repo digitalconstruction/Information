@@ -9,7 +9,7 @@
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" .
 <https://w3id.org/digitalconstruction/Information> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Information" .
-<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2000/01/rdf-schema#comment> "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." .
+<https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." .
 <https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Information" .
 <https://w3id.org/digitalconstruction/Information> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
@@ -145,6 +145,12 @@
 <https://w3id.org/digitalconstruction/Information#hasReply> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Information#Message> .
 <https://w3id.org/digitalconstruction/Information#hasReply> <http://www.w3.org/2000/01/rdf-schema#comment> "A message that replies to this message" .
 <https://w3id.org/digitalconstruction/Information#hasReply> <http://www.w3.org/2000/01/rdf-schema#label> "hasReply" .
+# 
+# https://w3id.org/digitalconstruction/Information#hasRootObject
+<https://w3id.org/digitalconstruction/Information#hasRootObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/Information#hasRootObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Information#InformationContainer> .
+<https://w3id.org/digitalconstruction/Information#hasRootObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000001> .
+<https://w3id.org/digitalconstruction/Information#hasRootObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasRootObject" .
 # 
 # https://w3id.org/digitalconstruction/Information#hasScope
 <https://w3id.org/digitalconstruction/Information#hasScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -283,16 +289,13 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # #################################################################
 # 
 # 
-# http://purl.obolibrary.org/obo/IAO_0000030
-<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
-# 
 # https://w3id.org/digitalconstruction/Entities#InformationContentEntity
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/digitalconstruction/Information#BuildingInfomationModel
-<https://w3id.org/digitalconstruction/Information#BuildingInfomationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#BuildingInfomationModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Design> .
-<https://w3id.org/digitalconstruction/Information#BuildingInfomationModel> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingInformationModel" .
+# https://w3id.org/digitalconstruction/Information#BuildingInformationModel
+<https://w3id.org/digitalconstruction/Information#BuildingInformationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#BuildingInformationModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Design> .
+<https://w3id.org/digitalconstruction/Information#BuildingInformationModel> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingInformationModel" .
 # 
 # https://w3id.org/digitalconstruction/Information#CausalRelationIssue
 <https://w3id.org/digitalconstruction/Information#CausalRelationIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -313,7 +316,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Information#Design
 <https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#InformationContainer> .
 <https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification of the construction products." .
 <https://w3id.org/digitalconstruction/Information#Design> <http://www.w3.org/2000/01/rdf-schema#label> "Design" .
 # 
@@ -376,6 +379,12 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "An information content entity containing visual data. For example, a photograph." .
 <https://w3id.org/digitalconstruction/Information#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image" .
 # 
+# https://w3id.org/digitalconstruction/Information#InformationContainer
+<https://w3id.org/digitalconstruction/Information#InformationContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#InformationContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Contexts#Context> .
+<https://w3id.org/digitalconstruction/Information#InformationContainer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#InformationContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "InformationContainer is a named persistent set of information (ISO 19650-1 3.3.1) retrievable from within a file, system or application storage hierarchy (ISO 19650-1 3.3.12)\n\nEXAMPLE Including sub-directory, information file (including model, document, table, schedule), or distinct sub-set of an information file such as a chapter or section, layer or symbol." .
+# 
 # https://w3id.org/digitalconstruction/Information#Issue
 <https://w3id.org/digitalconstruction/Information#Issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Information#Issue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
@@ -430,7 +439,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Information#Plan
 <https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#InformationContainer> .
 <https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network." .
 <https://w3id.org/digitalconstruction/Information#Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan" .
 # 
@@ -489,7 +498,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/digitalconstruction/Information#Scenario
 <https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
+<https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#InformationContainer> .
 <https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building." .
 <https://w3id.org/digitalconstruction/Information#Scenario> <http://www.w3.org/2000/01/rdf-schema#label> "Scenario" .
 # 
@@ -516,6 +525,11 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#StatusUpdate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Event> .
 <https://w3id.org/digitalconstruction/Information#StatusUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "StatusUpdate" .
 # 
+# https://w3id.org/digitalconstruction/Information#Stream
+<https://w3id.org/digitalconstruction/Information#Stream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/Information#Stream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#InformationContainer> .
+<https://w3id.org/digitalconstruction/Information#Stream> <http://www.w3.org/2000/01/rdf-schema#label> "Stream" .
+# 
 # https://w3id.org/digitalconstruction/Information#UnachievedGoal
 <https://w3id.org/digitalconstruction/Information#UnachievedGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/digitalconstruction/Information#UnachievedGoal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#PlanningIssue> .
@@ -538,4 +552,4 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/digitalconstruction/Information#WeekPlan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Information#Plan> .
 <https://w3id.org/digitalconstruction/Information#WeekPlan> <http://www.w3.org/2000/01/rdf-schema#label> "WeekPlan" .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,11 +1,11 @@
 <h2 id="crossreference" class="list">Cross reference for Digital Construction Information classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Digital Construction Information.
-<div id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#BuildingInfomationModel"
-            title="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">BuildingInformationModel</a>
+         <a href="#BuildingInformationModel"
+            title="https://w3id.org/digitalconstruction/Information#BuildingInformationModel">BuildingInformationModel</a>
       </li>
       <li>
          <a href="#CausalRelationIssue"
@@ -62,6 +62,12 @@ This section provides details for each class and property defined by Digital Con
       <li>
          <a href="#Image"
             title="https://w3id.org/digitalconstruction/Information#Image">Image</a>
+      </li>
+      <li>
+         <a href="#InformationContainer"
+            title="https://w3id.org/digitalconstruction/Information#InformationContainer">
+            <span>information container</span>
+         </a>
       </li>
       <li>
          <a href="#Issue"
@@ -160,6 +166,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#StatusUpdate">StatusUpdate</a>
       </li>
       <li>
+         <a href="#Stream"
+            title="https://w3id.org/digitalconstruction/Information#Stream">Stream</a>
+      </li>
+      <li>
          <a href="#UnachievedGoal"
             title="https://w3id.org/digitalconstruction/Information#UnachievedGoal">UnachievedGoal</a>
       </li>
@@ -176,13 +186,13 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#WeekPlan">WeekPlan</a>
       </li>
    </ul>
-   <div class="entity" id="BuildingInfomationModel">
+   <div class="entity" id="BuildingInformationModel">
       <h3>BuildingInformationModel<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#BuildingInfomationModel</p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#BuildingInformationModel</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -221,8 +231,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -240,8 +251,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -271,14 +283,14 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="#InformationContainer"
+               title="https://w3id.org/digitalconstruction/Information#InformationContainer">information container</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#BuildingInfomationModel"
-               title="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">BuildingInformationModel</a>
+            <a href="#BuildingInformationModel"
+               title="https://w3id.org/digitalconstruction/Information#BuildingInformationModel">BuildingInformationModel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Drawing"
                title="https://w3id.org/digitalconstruction/Information#Drawing">Drawing</a>
             <sup class="type-c" title="class">c</sup>
@@ -379,8 +391,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -410,8 +423,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -514,9 +528,52 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationContainer">
+      <h3>information container<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#InformationContainer</p>
+      <div class="comment">
+         <span class="markdown">InformationContainer is a named persistent set of information (ISO 19650-1 3.3.1) retrievable from within a file, system or application storage hierarchy (ISO 19650-1 3.3.12)
+
+EXAMPLE Including sub-directory, information file (including model, document, table, schedule), or distinct sub-set of an information file such as a chapter or section, layer or symbol.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://w3id.org/digitalconstruction/Contexts#Context"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Contexts#Context">context</a>, <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Design"
+               title="https://w3id.org/digitalconstruction/Information#Design">Design</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Plan"
+               title="https://w3id.org/digitalconstruction/Information#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Scenario"
+               title="https://w3id.org/digitalconstruction/Information#Scenario">Scenario</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Stream"
+               title="https://w3id.org/digitalconstruction/Information#Stream">Stream</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRootObject"
+               title="https://w3id.org/digitalconstruction/Information#hasRootObject">hasRootObject</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -533,8 +590,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -616,8 +674,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -776,8 +835,8 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="#InformationContainer"
+               title="https://w3id.org/digitalconstruction/Information#InformationContainer">information container</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -859,8 +918,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -941,8 +1001,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1023,8 +1084,8 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="#InformationContainer"
+               title="https://w3id.org/digitalconstruction/Information#InformationContainer">information container</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1108,6 +1169,22 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Stream">
+      <h3>Stream<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#Stream</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationContainer"
+               title="https://w3id.org/digitalconstruction/Information#InformationContainer">information container</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="UnachievedGoal">
       <h3>UnachievedGoal<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1156,8 +1233,9 @@ This section provides details for each class and property defined by Digital Con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+            <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+               target="_blank"
+               title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1178,7 +1256,7 @@ This section provides details for each class and property defined by Digital Con
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -1238,6 +1316,10 @@ This section provides details for each class and property defined by Digital Con
             title="https://w3id.org/digitalconstruction/Information#hasReply">hasReply</a>
       </li>
       <li>
+         <a href="#hasRootObject"
+            title="https://w3id.org/digitalconstruction/Information#hasRootObject">hasRootObject</a>
+      </li>
+      <li>
          <a href="#hasScope"
             title="https://w3id.org/digitalconstruction/Information#hasScope">hasScope</a>
       </li>
@@ -1289,8 +1371,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Activity">activity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Activity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">activity</a>
             </dd>
          </dl>
       </div>
@@ -1312,8 +1395,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Activity">activity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Activity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">activity</a>
             </dd>
          </dl>
       </div>
@@ -1338,8 +1422,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1362,8 +1447,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
          </dl>
       </div>
@@ -1385,8 +1471,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
          </dl>
       </div>
@@ -1432,8 +1519,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
          </dl>
       </div>
@@ -1497,8 +1585,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Variables#Constraint">constraint</span>
+               <a href="https://w3id.org/digitalconstruction/Variables#Constraint"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Variables#Constraint">constraint</a>
             </dd>
          </dl>
       </div>
@@ -1520,8 +1609,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Activity">activity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Activity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">activity</a>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -1576,8 +1666,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -1621,6 +1712,30 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasRootObject">
+      <h3>hasRootObject<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Information#hasRootObject</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationContainer"
+                  title="https://w3id.org/digitalconstruction/Information#InformationContainer">information container</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://purl.obolibrary.org/obo/BFO_0000001"
+                  target="_blank"
+                  title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasScope">
       <h3>hasScope<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1638,7 +1753,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</span>
+               <a href="http://purl.obolibrary.org/obo/BFO_0000001"
+                  target="_blank"
+                  title="http://purl.obolibrary.org/obo/BFO_0000001">b f o 0000001</a>
             </dd>
          </dl>
       </div>
@@ -1663,8 +1780,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -1710,8 +1828,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
          </dl>
       </div>
@@ -1727,8 +1846,9 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Activity">activity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Activity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">activity</a>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1759,8 +1879,9 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1821,12 +1942,15 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#Agent">agent</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#Agent"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">agent</a>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1843,7 +1967,7 @@ This section provides details for each class and property defined by Digital Con
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -1888,7 +2012,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -1910,7 +2036,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -1969,13 +2097,16 @@ This section provides details for each class and property defined by Digital Con
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</span>
+               <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+                  target="_blank"
+                  title="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">information content entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
             </dd>
          </dl>
       </div>
@@ -1997,7 +2128,9 @@ This section provides details for each class and property defined by Digital Con
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
             </dd>
          </dl>
       </div>

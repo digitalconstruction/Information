@@ -17,7 +17,7 @@
                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "dici" ;
                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Information" ;
-                                                    rdfs:comment "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction." ;
+                                                    rdfs:comment "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ;
                                                     rdfs:label "Digital Construction Information" ;
                                                     rdfs:seeAlso <https://w3id.org/digitalconstruction> .
 
@@ -168,6 +168,13 @@
           rdfs:label "hasReply" .
 
 
+###  https://w3id.org/digitalconstruction/Information#hasRootObject
+:hasRootObject rdf:type owl:ObjectProperty ;
+               rdfs:domain :InformationContainer ;
+               rdfs:range <http://purl.obolibrary.org/obo/BFO_0000001> ;
+               rdfs:label "hasRootObject" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
           rdfs:domain :Issue ;
@@ -309,18 +316,14 @@
 #    Classes
 #################################################################
 
-###  http://purl.obolibrary.org/obo/IAO_0000030
-<http://purl.obolibrary.org/obo/IAO_0000030> owl:equivalentClass <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> .
-
-
 ###  https://w3id.org/digitalconstruction/Entities#InformationContentEntity
 <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> rdf:type owl:Class .
 
 
-###  https://w3id.org/digitalconstruction/Information#BuildingInfomationModel
-:BuildingInfomationModel rdf:type owl:Class ;
-                         rdfs:subClassOf :Design ;
-                         rdfs:label "BuildingInformationModel" .
+###  https://w3id.org/digitalconstruction/Information#BuildingInformationModel
+:BuildingInformationModel rdf:type owl:Class ;
+                          rdfs:subClassOf :Design ;
+                          rdfs:label "BuildingInformationModel" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#CausalRelationIssue
@@ -345,7 +348,7 @@
 
 ###  https://w3id.org/digitalconstruction/Information#Design
 :Design rdf:type owl:Class ;
-        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+        rdfs:subClassOf :InformationContainer ;
         rdfs:comment "A specification of the construction products." ;
         rdfs:label "Design" .
 
@@ -419,6 +422,15 @@
        rdfs:label "Image" .
 
 
+###  https://w3id.org/digitalconstruction/Information#InformationContainer
+:InformationContainer rdf:type owl:Class ;
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Contexts#Context> ,
+                                      <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+                      rdfs:comment """InformationContainer is a named persistent set of information (ISO 19650-1 3.3.1) retrievable from within a file, system or application storage hierarchy (ISO 19650-1 3.3.12)
+
+EXAMPLE Including sub-directory, information file (including model, document, table, schedule), or distinct sub-set of an information file such as a chapter or section, layer or symbol.""" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#Issue
 :Issue rdf:type owl:Class ;
        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
@@ -482,7 +494,7 @@
 
 ###  https://w3id.org/digitalconstruction/Information#Plan
 :Plan rdf:type owl:Class ;
-      rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+      rdfs:subClassOf :InformationContainer ;
       rdfs:comment "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network." ;
       rdfs:label "Plan" .
 
@@ -551,7 +563,7 @@
 
 ###  https://w3id.org/digitalconstruction/Information#Scenario
 :Scenario rdf:type owl:Class ;
-          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#InformationContentEntity> ;
+          rdfs:subClassOf :InformationContainer ;
           rdfs:comment "A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building." ;
           rdfs:label "Scenario" .
 
@@ -583,6 +595,12 @@
               rdfs:label "StatusUpdate" .
 
 
+###  https://w3id.org/digitalconstruction/Information#Stream
+:Stream rdf:type owl:Class ;
+        rdfs:subClassOf :InformationContainer ;
+        rdfs:label "Stream" .
+
+
 ###  https://w3id.org/digitalconstruction/Information#UnachievedGoal
 :UnachievedGoal rdf:type owl:Class ;
                 rdfs:subClassOf :PlanningIssue ;
@@ -609,4 +627,4 @@
           rdfs:label "WeekPlan" .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
