@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/digitalconstruction/Information#"
-     xml:base="https://w3id.org/digitalconstruction/Information"
+<rdf:RDF xmlns="https://w3id.org/digitalconstruction/0.3/Information#"
+     xml:base="https://w3id.org/digitalconstruction/0.3/Information"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,9 +9,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Information">
+    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/0.3/Information">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities"/>
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities"/>
         <dc:date>2020-03-20</dc:date>
         <dc:title>Digital Construction Information</dc:title>
         <terms:created>2020-01-12</terms:created>
@@ -19,7 +19,7 @@
         <terms:creator>Yuan Zheng</terms:creator>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>dici</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/digitalconstruction/Information</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/digitalconstruction/0.3/Information</vann:preferredNamespaceUri>
         <rdfs:comment>The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction.</rdfs:comment>
         <rdfs:label>Digital Construction Information</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/digitalconstruction"/>
@@ -114,251 +114,251 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ClientObligation -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ClientObligation -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#ClientObligation">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Contract"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ClientObligation">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Contract"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
         <rdfs:label>clientObligation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ContractorObligation -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ContractorObligation -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#ContractorObligation">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Contract"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ContractorObligation">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Contract"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
         <rdfs:label>contractorObligation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasAttachment -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasAttachment -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasAttachment">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasAttachment">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>An information content entity attached to the message</rdfs:comment>
         <rdfs:label>hasAttachment</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasClient -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasClient -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasClient">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Contract"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasClient">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Contract"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:label>hasClient</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasContractor -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasContractor -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasContractor">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Contract"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasContractor">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Contract"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:label>hasContractor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasEvaluationCriteria -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#EvaluationCriteria"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasEvaluationCriteria">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria"/>
         <rdfs:label>hasEvaluationCriteria</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasHandler -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasHandler -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasHandler">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasHandler">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:label>hasHandler</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasObjective -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasObjective -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasObjective">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasObjective">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
         <rdfs:label>hasObjective</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasParentIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasParentIssue -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasParentIssue">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasParentIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:label>hasParentIssue</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasPlanConstraint -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasPlanConstraint -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlanConstraint">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Variables#Constraint"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasPlanConstraint">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#Constraint"/>
         <rdfs:label>hasPlanConstraint</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasPlannedActivity -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasPlannedActivity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlannedActivity">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasPlannedActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#isPlannedActiviyOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
         <rdfs:label>hasPlannedActivity</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasPlanningIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasPlanningIssue -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasPlanningIssue">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasPlanningIssue">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"/>
         <rdfs:label>hasPlanningIssue</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasRecipient -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasRecipient -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasRecipient">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isRecipientOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasRecipient">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#isRecipientOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:comment>The agent that is the recipients of the message</rdfs:comment>
         <rdfs:label>hasRecipient</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasReply -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasReply -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasReply">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isReplyTo"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasReply">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#isReplyTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:comment>A message that replies to this message</rdfs:comment>
         <rdfs:label>hasReply</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasScope -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasScope -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasScope">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasScope">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:label>hasScope</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasSender -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasSender -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasSender">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Information#isSenderOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasSender">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#isSenderOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:comment>The sender of a message</rdfs:comment>
         <rdfs:label>hasSender</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasSolution -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasSolution -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasSolution">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasSolution">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:label>hasSolution</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#imposedBy -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#imposedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#imposedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#RegulatoryOrder"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#imposedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#RegulatoryOrder"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:label>imposedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#isPlannedActiviyOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#isPlannedActiviyOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#isRecipientOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#isRecipientOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isRecipientOf">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#isRecipientOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:comment>A message that the agent has received</rdfs:comment>
         <rdfs:label>isRecipientOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#isReplyTo -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#isReplyTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isReplyTo">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#isReplyTo">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:comment>The message that this message is a reply to</rdfs:comment>
         <rdfs:label>isReplyTo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#isSenderOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#isSenderOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Information#isSenderOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#isSenderOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:label>isSenderOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -376,33 +376,33 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasMessageBody -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasMessageBody -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasMessageBody">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasMessageBody">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasMessageBody</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasMessageSubject -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasMessageSubject -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasMessageSubject">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasMessageSubject">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasMessageSubject</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasNotificationImportance -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasNotificationImportance -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasNotificationImportance">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Notification"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasNotificationImportance">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Notification"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -437,11 +437,11 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasStatusValue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasStatusValue -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasStatusValue">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#StatusUpdate"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasStatusValue">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#StatusUpdate"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -482,11 +482,11 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#hasWebAddress -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#hasWebAddress -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#hasWebAddress">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#hasWebAddress">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment>An Web address (URI) from which the information content entity can be accessed</rdfs:comment>
         <rdfs:label>hasWebAddress</rdfs:label>
@@ -494,11 +494,11 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#isReceiptRequired -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#isReceiptRequired -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Information#isReceiptRequired">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Information#isReceiptRequired">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label>isReceiptRequired</rdfs:label>
     </owl:DatatypeProperty>
@@ -521,477 +521,477 @@
 
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <owl:equivalentClass rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
     </rdf:Description>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#InformationContentEntity -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#BuildingInfomationModel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#BuildingInfomationModel -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#BuildingInfomationModel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Design"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#BuildingInfomationModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Design"/>
         <rdfs:label>BuildingInformationModel</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#CausalRelationIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#CausalRelationIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#CausalRelationIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#CausalRelationIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"/>
         <rdfs:comment>The broken or threatened causal relation between activities. For example, an activity to clean up a space before painting is (or can be) followed by an activity that messes up the space again.</rdfs:comment>
         <rdfs:label>CausalRelationIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Certificate -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Certificate -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Certificate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Certificate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:label>Certificate</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Contract -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Contract -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Contract">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Contract">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>An agreement that specifies the mutual obligations of a client and a contractor.</rdfs:comment>
         <rdfs:label>Contract</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Design -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Design -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Design">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Design">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>A specification of the construction products.</rdfs:comment>
         <rdfs:label>Design</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#DesignChangeRequest -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#DesignChangeRequest -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DesignChangeRequest">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#DesignIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#DesignChangeRequest">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#DesignIssue"/>
         <rdfs:comment>A need for a design change is detected</rdfs:comment>
         <rdfs:label>DesignChangeRequest</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#DesignIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#DesignIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DesignIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#DesignIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:comment>An issue concerning the design of a product (a building or some of its components or systems)</rdfs:comment>
         <rdfs:label>DesignIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#DisturbanceAreaIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#DisturbanceAreaIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>A disturbance (noise, dust, ...) at an area</rdfs:comment>
         <rdfs:label>DisturbanceAreaIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Drawing -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Drawing -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Drawing">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Design"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Drawing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Design"/>
         <rdfs:label>Drawing</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#EvaluationCriteria -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#EvaluationCriteria">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured.</rdfs:comment>
         <rdfs:label>EvaluationCriteria</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Event -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Event -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Event">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Event">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>A occurence that happens with a time instant for obtaining the information.</rdfs:comment>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ExecutionDelay -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ExecutionDelay -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionDelay">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ExecutionDelay">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>The execution of an activity is behind its schedule</rdfs:comment>
         <rdfs:label>ExecutionDelay</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ExecutionFailure -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ExecutionFailure -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionFailure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ExecutionFailure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>The execution of an activity fails to produce its intended effects</rdfs:comment>
         <rdfs:label>ExecutionFailure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ExecutionIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ExecutionIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:comment>Issue in the execution of activities</rdfs:comment>
         <rdfs:label>ExecutionIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Image -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Image -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Image">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Image">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>An information content entity containing visual data. For example, a photograph.</rdfs:comment>
         <rdfs:label>Image</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Issue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Issue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Issue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Issue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>A detected problem that requires an action.</rdfs:comment>
         <rdfs:label>Issue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#LookaheadPlan -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#LookaheadPlan -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#LookaheadPlan">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#LookaheadPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
         <rdfs:label>LookaheadPlan</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#MasterPlan -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#MasterPlan -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#MasterPlan">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#MasterPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
         <rdfs:label>MasterPlan</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Message -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Message -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Message">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Message">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>Information content transferred from a sender to receivers</rdfs:comment>
         <rdfs:label>Message</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#NonConformanceIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#NonConformanceIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#NonConformanceIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ProductIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#NonConformanceIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ProductIssue"/>
         <rdfs:comment>Issue that is about an entity that does not conform to its specification</rdfs:comment>
         <rdfs:label>NonConformanceIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Notification -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Notification -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Notification">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Notification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:comment>Notification is a message to inform recipients in a controlled manner about a situation they need to be aware of</rdfs:comment>
         <rdfs:label>Notification</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Observation -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Observation -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Observation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Event"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Observation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Event"/>
         <rdfs:comment>Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA).</rdfs:comment>
         <rdfs:label>Observation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#OrderingConflict -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#OrderingConflict -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#OrderingConflict">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#OrderingConflict">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"/>
         <rdfs:comment>Two activities cannot be ordered to satisfy the requirements of a plan</rdfs:comment>
         <rdfs:label>OrderingConflict</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#PerformanceIndicator -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#PerformanceIndicator -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PerformanceIndicator">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#EvaluationCriteria"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#PerformanceIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria"/>
         <rdfs:comment>Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements</rdfs:comment>
         <rdfs:label>PerformanceIndicator</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Plan -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Plan -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Plan">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Plan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network.</rdfs:comment>
         <rdfs:label>Plan</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#PlanningIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PlanningIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:comment>Issue concerning a plan</rdfs:comment>
         <rdfs:label>PlanningIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#PointCloud -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#PointCloud -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PointCloud">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#PointCloud">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:label>PointCloud</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#PreconditionIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#PreconditionIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#PreconditionIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#PreconditionIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>The preconditions of an activity are not satisfied at execution time</rdfs:comment>
         <rdfs:label>PreconditionIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ProductIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ProductIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ProductIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ProductIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:comment>Issue related to the product (e.g., a building or some of its components or systems)</rdfs:comment>
         <rdfs:label>ProductIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Recommendation -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Recommendation -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Recommendation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Message"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Recommendation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Message"/>
         <rdfs:comment>Recommendation is a message in which the sender proposes a course of action to the recipient</rdfs:comment>
         <rdfs:label>Recommendation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#RegulatoryOrder -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#RegulatoryOrder -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#RegulatoryOrder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#RegulatoryOrder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)</rdfs:comment>
         <rdfs:label>RegulatoryOrder</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ResourceConflict -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ResourceConflict -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ResourceConflict">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ResourceConflict">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>Activities require more resources than what are available</rdfs:comment>
         <rdfs:label>ResourceConflict</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ResourceFailure -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ResourceFailure -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ResourceFailure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ResourceFailure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>A resource has been broken and cannot be used for the execution of activities</rdfs:comment>
         <rdfs:label>ResourceFailure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#SafetyIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#SafetyIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#SafetyIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#SafetyIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>Execution poses a safety threat to some agents</rdfs:comment>
         <rdfs:label>SafetyIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Scenario -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Scenario -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Scenario">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Scenario">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:comment>A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building.</rdfs:comment>
         <rdfs:label>Scenario</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ScopeIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ScopeIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ScopeIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#DesignIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ScopeIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#DesignIssue"/>
         <rdfs:comment>The scope of the product is too large or too small. For instance, some necessary parts are missing</rdfs:comment>
         <rdfs:label>ScopeIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#ServiceOutageIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#ServiceOutageIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#ServiceOutageIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#ExecutionIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#ServiceOutageIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"/>
         <rdfs:comment>A non-functioning service</rdfs:comment>
         <rdfs:label>ServiceOutageIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#StakeholderIssue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#StakeholderIssue -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#StakeholderIssue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Issue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#StakeholderIssue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Issue"/>
         <rdfs:comment>An issue related to the stakeholders of a project</rdfs:comment>
         <rdfs:label>StakeholderIssue</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#StatusUpdate -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#StatusUpdate -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#StatusUpdate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Event"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#StatusUpdate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Event"/>
         <rdfs:label>StatusUpdate</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#UnachievedGoal -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#UnachievedGoal -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#UnachievedGoal">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#UnachievedGoal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"/>
         <rdfs:comment>A plan issue concerning a goal that is not achieved by the plan</rdfs:comment>
         <rdfs:label>UnachievedGoal</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#UnexecutableActivity -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#UnexecutableActivity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#UnexecutableActivity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#PlanningIssue"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#UnexecutableActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"/>
         <rdfs:comment>A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps.</rdfs:comment>
         <rdfs:label>UnexecutableActivity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#Video -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#Video -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#Video">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#InformationContentEntity"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#Video">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"/>
         <rdfs:label>Video</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Information#WeekPlan -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Information#WeekPlan -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Information#WeekPlan">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Information#Plan"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Information#WeekPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Information#Plan"/>
         <rdfs:label>WeekPlan</rdfs:label>
     </owl:Class>
 </rdf:RDF>

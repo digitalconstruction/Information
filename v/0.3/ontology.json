@@ -31,7 +31,7 @@
 }, {
   "@id" : "http://purl.obolibrary.org/obo/IAO_0000030",
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
@@ -61,10 +61,10 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/date" : [ {
     "@value" : "2020-03-20"
@@ -87,7 +87,7 @@
     "@value" : "dici"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://w3id.org/digitalconstruction/Information"
+    "@value" : "https://w3id.org/digitalconstruction/0.3/Information"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Information ontology is defined as one module of the digital construction ontology.  The aim of this ontology is to describe the information related  concepts, relations and axioms of the construction construction."
@@ -101,19 +101,19 @@
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
   }, {
-    "@id" : "https://w3id.org/digitalconstruction/Entities"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#BuildingInfomationModel",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#BuildingInfomationModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BuildingInformationModel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Design"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Design"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#CausalRelationIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#CausalRelationIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The broken or threatened causal relation between activities. For example, an activity to clean up a space before painting is (or can be) followed by an activity that messes up the space again."
@@ -122,31 +122,31 @@
     "@value" : "CausalRelationIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Certificate",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Certificate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Certificate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ClientObligation",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ClientObligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "clientObligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Activity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Contract",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An agreement that specifies the mutual obligations of a client and a contractor."
@@ -155,22 +155,22 @@
     "@value" : "Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ContractorObligation",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ContractorObligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "contractorObligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Activity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Design",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Design",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A specification of the construction products."
@@ -179,10 +179,10 @@
     "@value" : "Design"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#DesignChangeRequest",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#DesignChangeRequest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A need for a design change is detected"
@@ -191,10 +191,10 @@
     "@value" : "DesignChangeRequest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#DesignIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#DesignIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#DesignIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#DesignIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An issue concerning the design of a product (a building or some of its components or systems)"
@@ -203,10 +203,10 @@
     "@value" : "DesignIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#DisturbanceAreaIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#DisturbanceAreaIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A disturbance (noise, dust, ...) at an area"
@@ -215,19 +215,19 @@
     "@value" : "DisturbanceAreaIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Drawing",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Drawing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Drawing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Design"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Design"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Evaluation Criteria is a definition of a benchmark, standard, or yardstick against which accomplishment, conformance, performance, and suitability of an individual, alternative, activity, product, or plan is measured."
@@ -236,10 +236,10 @@
     "@value" : "EvaluationCriteria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Event",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A occurence that happens with a time instant for obtaining the information."
@@ -248,10 +248,10 @@
     "@value" : "Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionDelay",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionDelay",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The execution of an activity is behind its schedule"
@@ -260,10 +260,10 @@
     "@value" : "ExecutionDelay"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionFailure",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionFailure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The execution of an activity fails to produce its intended effects"
@@ -272,10 +272,10 @@
     "@value" : "ExecutionFailure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Issue in the execution of activities"
@@ -284,10 +284,10 @@
     "@value" : "ExecutionIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Image",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An information content entity containing visual data. For example, a photograph."
@@ -296,10 +296,10 @@
     "@value" : "Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Issue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A detected problem that requires an action."
@@ -308,28 +308,28 @@
     "@value" : "Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#LookaheadPlan",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#LookaheadPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "LookaheadPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#MasterPlan",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#MasterPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "MasterPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Message",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Information content transferred from a sender to receivers"
@@ -338,10 +338,10 @@
     "@value" : "Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#NonConformanceIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#NonConformanceIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Issue that is about an entity that does not conform to its specification"
@@ -350,10 +350,10 @@
     "@value" : "NonConformanceIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ProductIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ProductIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Notification",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Notification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Notification is a message to inform recipients in a controlled manner about a situation they need to be aware of"
@@ -362,10 +362,10 @@
     "@value" : "Notification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Observation",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Observation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)."
@@ -374,10 +374,10 @@
     "@value" : "Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Event"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Event"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#OrderingConflict",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#OrderingConflict",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Two activities cannot be ordered to satisfy the requirements of a plan"
@@ -386,10 +386,10 @@
     "@value" : "OrderingConflict"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#PerformanceIndicator",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PerformanceIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Performance Indicator is an Evaluation Criteria concerning the performance of an activity or some of its elements"
@@ -398,10 +398,10 @@
     "@value" : "PerformanceIndicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Plan",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A set of activities with constraints associated to them. For example, a sequence of activities (a set of activities with precedence constraints), or a project network."
@@ -410,10 +410,10 @@
     "@value" : "Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Issue concerning a plan"
@@ -422,19 +422,19 @@
     "@value" : "PlanningIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#PointCloud",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PointCloud",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "PointCloud"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#PreconditionIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PreconditionIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The preconditions of an activity are not satisfied at execution time"
@@ -443,10 +443,10 @@
     "@value" : "PreconditionIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ProductIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ProductIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Issue related to the product (e.g., a building or some of its components or systems)"
@@ -455,10 +455,10 @@
     "@value" : "ProductIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Recommendation",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Recommendation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Recommendation is a message in which the sender proposes a course of action to the recipient"
@@ -467,10 +467,10 @@
     "@value" : "Recommendation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#RegulatoryOrder",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#RegulatoryOrder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Regulatory Order means any injunction, order, judgment, decree, memorandum of understanding, consent decree, directive or regulatory restriction, or any change in or interpretation of any law, rule or regulation, imposed by a Governmental Entity. (https://www.lawinsider.com/)"
@@ -479,10 +479,10 @@
     "@value" : "RegulatoryOrder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ResourceConflict",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ResourceConflict",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Activities require more resources than what are available"
@@ -491,10 +491,10 @@
     "@value" : "ResourceConflict"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ResourceFailure",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ResourceFailure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A resource has been broken and cannot be used for the execution of activities"
@@ -503,10 +503,10 @@
     "@value" : "ResourceFailure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#SafetyIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#SafetyIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Execution poses a safety threat to some agents"
@@ -515,10 +515,10 @@
     "@value" : "SafetyIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Scenario",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Scenario",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A description and analysis of a potential future of some entity (an location, system, agent, or so). The scenario is about that particular entity. The purpose of a scenario is to explore, understand and predict the future of the entity. An example: a renovation scenario that is about a building, describes the installation of additional insulation and contains the resulting energy efficiency properties of the building."
@@ -527,10 +527,10 @@
     "@value" : "Scenario"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ScopeIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ScopeIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The scope of the product is too large or too small. For instance, some necessary parts are missing"
@@ -539,10 +539,10 @@
     "@value" : "ScopeIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#DesignIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#DesignIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#ServiceOutageIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ServiceOutageIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A non-functioning service"
@@ -551,10 +551,10 @@
     "@value" : "ServiceOutageIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#ExecutionIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#ExecutionIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#StakeholderIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#StakeholderIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An issue related to the stakeholders of a project"
@@ -563,19 +563,19 @@
     "@value" : "StakeholderIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#StatusUpdate",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#StatusUpdate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "StatusUpdate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Event"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Event"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#UnachievedGoal",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#UnachievedGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A plan issue concerning a goal that is not achieved by the plan"
@@ -584,10 +584,10 @@
     "@value" : "UnachievedGoal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#UnexecutableActivity",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#UnexecutableActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A plan contains an activity that is not concrete enough to be executed. For instance, its resource allocation is missing or it still needs to be broken into a sequence of concrete steps."
@@ -596,94 +596,94 @@
     "@value" : "UnexecutableActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#Video",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Video",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Video"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#WeekPlan",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#WeekPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "WeekPlan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasAttachment",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasAttachment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An information content entity attached to the message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAttachment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasClient",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasClient",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasClient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasContractor",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasContractor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Contract"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasContractor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasEvaluationCriteria",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasEvaluationCriteria",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasEvaluationCriteria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#EvaluationCriteria"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#EvaluationCriteria"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasHandler",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasHandler",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasMessageBody",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasMessageBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasMessageBody"
@@ -692,10 +692,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasMessageSubject",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasMessageSubject",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasMessageSubject"
@@ -704,10 +704,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasNotificationImportance",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasNotificationImportance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Notification"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Notification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasNotificationImportance"
@@ -716,106 +716,106 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasObjective",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasObjective",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasObjective"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasParentIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasParentIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasParentIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasPlanConstraint",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasPlanConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPlanConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Variables#Constraint"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Variables#Constraint"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasPlannedActivity",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasPlannedActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPlannedActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Activity"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isPlannedActiviyOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasPlanningIssue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasPlanningIssue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPlanningIssue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#PlanningIssue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#PlanningIssue"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasRecipient",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasRecipient",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The agent that is the recipients of the message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasRecipient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#isRecipientOf"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isRecipientOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasReply",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasReply",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A message that replies to this message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasReply"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#isReplyTo"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isReplyTo"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasScope",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasScope",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasScope"
@@ -824,37 +824,37 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000001"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasSender",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasSender",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The sender of a message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasSender"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#isSenderOf"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isSenderOf"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasSolution",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Issue"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Issue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasSolution"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasStatusValue",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasStatusValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#StatusUpdate"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#StatusUpdate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasStatusValue"
@@ -863,13 +863,13 @@
     "@id" : "_:genid6"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#hasWebAddress",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#hasWebAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An Web address (URI) from which the information content entity can be accessed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#InformationContentEntity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#InformationContentEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasWebAddress"
@@ -878,31 +878,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#imposedBy",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#imposedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#RegulatoryOrder"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#RegulatoryOrder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "imposedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isPlannedActiviyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Plan"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Plan"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isReceiptRequired",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isReceiptRequired",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isReceiptRequired"
@@ -911,46 +911,46 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isRecipientOf",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isRecipientOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A message that the agent has received"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isRecipientOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isReplyTo",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isReplyTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The message that this message is a reply to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isReplyTo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Information#isSenderOf",
+  "@id" : "https://w3id.org/digitalconstruction/0.3/Information#isSenderOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Entities#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isSenderOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Information#Message"
+    "@id" : "https://w3id.org/digitalconstruction/0.3/Information#Message"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
