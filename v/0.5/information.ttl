@@ -1,6 +1,7 @@
 @prefix : <https://w3id.org/digitalconstruction/0.5/Information#> .
 @prefix dice: <https://w3id.org/digitalconstruction/0.5/Entities#> .
 @prefix dicc: <https://w3id.org/digitalconstruction/0.5/Contexts#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
 @prefix dicp: <https://w3id.org/digitalconstruction/0.5/Processes#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13,7 +14,7 @@
 @base <https://w3id.org/digitalconstruction/0.5/Information> .
 
 <https://w3id.org/digitalconstruction/0.5/Information> rdf:type owl:Ontology ;
-                                                    owl:imports <https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl> ;
+                                                    owl:imports <https://w3id.org/digitalconstruction/0.5/Agents/agents.ttl> ;
                                                     dc:date "2020-03-20" ;
                                                     dc:title "Digital Construction Information" ;
                                                     terms:created "2020-01-12" ;
@@ -116,7 +117,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/digitalconstruction/Information#hasClient
 :hasClient rdf:type owl:ObjectProperty ;
            rdfs:domain :Contract ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	   rdfs:range dica:Agent ;
            rdfs:label "hasClient" .
 
 
@@ -130,7 +131,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/digitalconstruction/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
-               rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	       rdfs:range dica:Agent ;
                rdfs:label "hasContractor" .
 
 
@@ -144,7 +145,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/digitalconstruction/Information#hasHandler
 :hasHandler rdf:type owl:ObjectProperty ;
             rdfs:domain :Issue ;
-            rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	    rdfs:range dica:Agent ;
             rdfs:label "hasHandler" .
 
 
@@ -187,7 +188,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :hasRecipient rdf:type owl:ObjectProperty ;
               owl:inverseOf :isRecipientOf ;
               rdfs:domain :Message ;
-              rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	      rdfs:range dica:Agent ;
               rdfs:comment "The agent that is the recipients of the message" ;
               rdfs:label "hasRecipient" .
 
@@ -217,7 +218,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :hasSender rdf:type owl:ObjectProperty ;
            owl:inverseOf :isSenderOf ;
            rdfs:domain :Message ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	   rdfs:range dica:Agent ;
            rdfs:comment "The sender of a message" ;
            rdfs:label "hasSender" .
 
@@ -231,19 +232,19 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/digitalconstruction/Information#imposedBy
 :imposedBy rdf:type owl:ObjectProperty ;
            rdfs:domain :RegulatoryOrder ;
-           rdfs:range <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	   rdfs:range dica:Agent ;
            rdfs:label "imposedBy" .
 
 
 ###  https://w3id.org/digitalconstruction/Information#isPlannedActiviyOf
 :isPlannedActiviyOf rdf:type owl:ObjectProperty ;
-                    rdfs:domain <https://w3id.org/digitalconstruction/Entities#Activity> ;
+                    rdfs:domain dice:Activity ;
                     rdfs:range :Plan .
 
 
 ###  https://w3id.org/digitalconstruction/Information#isRecipientOf
 :isRecipientOf rdf:type owl:ObjectProperty ;
-               rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
+               rdfs:domain dica:Agent ;
                rdfs:range :Message ;
                rdfs:comment "A message that the agent has received" ;
                rdfs:label "isRecipientOf" .
@@ -260,9 +261,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/digitalconstruction/Information#isSenderOf
 :isSenderOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
+	    rdfs:domain dica:Agent ;
             rdfs:range :Message ;
             rdfs:label "isSenderOf" .
+
+###  https://w3id.org/digitalconstruction/Entities#representsContentOf
+:representsContentOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain dicc:Context ;
+                     rdfs:range :InformationContentEntity ;
+                     rdfs:comment "The information content entity that is the source of the data represented in this context" ;
+                     rdfs:label "representsContentOf" .
+
 
 
 #################################################################
