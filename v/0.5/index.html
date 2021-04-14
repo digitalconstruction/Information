@@ -189,7 +189,7 @@
     <script type="application/ld+json">
       [
   {
-    "@id": "https://w3id.org/digitalconstruction/Information",
+    "@id": "https://w3id.org/digitalconstruction/0.5/Information",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -222,7 +222,7 @@
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>https://w3id.org/digitalconstruction/Information</code></dd>
+        <dd><code>https://w3id.org/digitalconstruction/0.5/Information</code></dd>
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
         <dd>
             Seppo Törmä<br/>
@@ -335,7 +335,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -356,7 +362,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -377,7 +383,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -392,7 +398,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -413,16 +419,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ContractorObligation">ContractorObligation</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasContractor">hasContractor</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ClientObligation">ClientObligation</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasClient">hasClient</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasClient">hasClient</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasContractor">hasContractor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#clientObligation">ClientObligation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#contractorObligation">ContractorObligation</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -443,14 +449,14 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Drawing">Drawing</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#BuildingInformationModel">BuildingInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Drawing">Drawing</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#BuildingInformationModel">BuildingInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -471,7 +477,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -492,14 +498,14 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ScopeIssue">ScopeIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#DesignChangeRequest">DesignChangeRequest</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignChangeRequest">DesignChangeRequest</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ScopeIssue">ScopeIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -520,7 +526,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -535,7 +541,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -550,7 +556,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -571,19 +577,19 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PerformanceIndicator">PerformanceIndicator</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PerformanceIndicator">PerformanceIndicator</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -604,14 +610,14 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -632,7 +638,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -653,7 +659,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -674,20 +680,20 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PreconditionIssue">PreconditionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#DisturbanceAreaIssue">DisturbanceAreaIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionDelay">ExecutionDelay</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#SafetyIssue">SafetyIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SafetyIssue">SafetyIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PreconditionIssue">PreconditionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DisturbanceAreaIssue">DisturbanceAreaIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionDelay">ExecutionDelay</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -708,7 +714,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -731,30 +737,85 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">dicc:Context</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Linkset">Linkset</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Document">Document</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Stream">Stream</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Stream">Stream</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Document">Document</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Linkset">Linkset</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasContainedInInformationModel">hasContainedInInformationModel</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasRootObject">hasRootObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasRootObject">hasRootObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#containedInInformationModel">containedInInformationModel</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#containsInformationContainer">containsInformationContainer</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#containsInformationContainer">containsInformationContainer</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="InformationContentEntity">
+        <h3>InformationContentEntity<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#InformationContentEntity</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Identifiable information content. Examples are a BIM model, a drawing, a specification, an image, a message, and an issue. Separate from physical information carriers. Note that the instances of this concept represent particular identifiable contents (such as a version of a architectural model or a master plan), not the physical carrier of that content (such as a database, a file in a cloud storage, or a bunch of paper). There can be several different carriers for the same information content entity</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#GenericallyDependentContinuant">dice:GenericallyDependentContinuant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Image">Image</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PointCloud">PointCloud</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Video">Video</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#contentRepresentedIn">contentRepresentedIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasInformation">hasInformation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -779,26 +840,27 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Contexts#ContextSet">dicc:ContextSet</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#AssetInformationModel">AssetInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ProjectInformationModel">ProjectInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AssetInformationModel">AssetInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProjectInformationModel">ProjectInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#containsInformationContainer">containsInformationContainer</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#containsInformationContainer">containsInformationContainer</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasContainedInInformationModel">hasContainedInInformationModel</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#containedInInformationModel">containedInInformationModel</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -819,32 +881,32 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#StakeholderIssue">StakeholderIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StakeholderIssue">StakeholderIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasScope">hasScope</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasHandler">hasHandler</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasSolution">hasSolution</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasHandler">hasHandler</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSolution">hasSolution</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasScope">hasScope</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -866,7 +928,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -881,7 +943,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -896,7 +958,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -917,36 +979,36 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Recommendation">Recommendation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Recommendation">Recommendation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasSender">hasSender</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isReceiptRequired">isReceiptRequired</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasMessageBody">hasMessageBody</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasRecipient">hasRecipient</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasRecipient">hasRecipient</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSender">hasSender</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isReceiptRequired">isReceiptRequired</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasMessageBody">hasMessageBody</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -967,7 +1029,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -988,13 +1050,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasNotificationImportance">hasNotificationImportance</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasNotificationImportance">hasNotificationImportance</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1015,7 +1077,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1036,7 +1098,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1057,7 +1119,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1078,32 +1140,32 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#LookaheadPlan">LookaheadPlan</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#WeekPlan">WeekPlan</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#MasterPlan">MasterPlan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LookaheadPlan">LookaheadPlan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#WeekPlan">WeekPlan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MasterPlan">MasterPlan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasPlannedActivity">hasPlannedActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasObjective">hasObjective</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlannedActivity">hasPlannedActivity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObjective">hasObjective</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isPlannedActiviyOf">isPlannedActiviyOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isPlannedActiviyOf">isPlannedActiviyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1124,22 +1186,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#OrderingConflict">OrderingConflict</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#CausalRelationIssue">CausalRelationIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#UnachievedGoal">UnachievedGoal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CausalRelationIssue">CausalRelationIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#OrderingConflict">OrderingConflict</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UnachievedGoal">UnachievedGoal</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1154,7 +1216,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1175,7 +1237,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1196,13 +1258,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#NonConformanceIssue">NonConformanceIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NonConformanceIssue">NonConformanceIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1225,7 +1287,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Restrictions</th>
+                <td>
+                    <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">only</span> <a href="https://w3id.org/digitalconstruction/0.5/Processes#Project">dicp:Project</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1246,7 +1314,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1267,13 +1335,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#imposedBy">imposedBy</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#imposedBy">imposedBy</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1288,7 +1356,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1309,7 +1377,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1330,7 +1398,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1351,7 +1419,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1372,13 +1440,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#RenovationScenario">RenovationScenario</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RenovationScenario">RenovationScenario</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1399,7 +1467,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1420,7 +1488,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1441,7 +1509,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1456,13 +1524,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasStatusValue">hasStatusValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasStatusValue">hasStatusValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1477,7 +1545,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1498,7 +1566,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1519,7 +1587,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1534,7 +1602,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1549,45 +1617,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="InformationContentEntity">
-        <h3>InformationContentEntity<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/Entities#InformationContentEntity</code></td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Image">Image</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PointCloud">PointCloud</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Video">Video</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1598,13 +1628,15 @@
     <ul class="hlist">
         <li><a href="#clientObligation">clientObligation</a></li>
         <li><a href="#contractorObligation">contractorObligation</a></li>
+        <li><a href="#containedInInformationModel">containedInInformationModel</a></li>
         <li><a href="#containsInformationContainer">containsInformationContainer</a></li>
+        <li><a href="#contentRepresentedIn">contentRepresentedIn</a></li>
         <li><a href="#hasAttachment">hasAttachment</a></li>
         <li><a href="#hasClient">hasClient</a></li>
-        <li><a href="#hasContainedInInformationModel">hasContainedInInformationModel</a></li>
         <li><a href="#hasContractor">hasContractor</a></li>
         <li><a href="#hasEvaluationCriteria">hasEvaluationCriteria</a></li>
         <li><a href="#hasHandler">hasHandler</a></li>
+        <li><a href="#hasInformation">hasInformation</a></li>
         <li><a href="#hasObjective">hasObjective</a></li>
         <li><a href="#hasParentIssue">hasParentIssue</a></li>
         <li><a href="#hasPlanConstraint">hasPlanConstraint</a></li>
@@ -1617,10 +1649,12 @@
         <li><a href="#hasSender">hasSender</a></li>
         <li><a href="#hasSolution">hasSolution</a></li>
         <li><a href="#imposedBy">imposedBy</a></li>
+        <li><a href="#isAbout">isAbout</a></li>
         <li><a href="#isPlannedActiviyOf">isPlannedActiviyOf</a></li>
         <li><a href="#isRecipientOf">isRecipientOf</a></li>
         <li><a href="#isReplyTo">isReplyTo</a></li>
         <li><a href="#isSenderOf">isSenderOf</a></li>
+        <li><a href="#isTopicOf">isTopicOf</a></li>
     </ul>
     <div class="entity property" id="clientObligation">
         <h3>clientObligation<sup title="object property" class="sup-op">op</sup></h3>
@@ -1632,13 +1666,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Activity">https://w3id.org/digitalconstruction/Entities#Activity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1653,13 +1687,34 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Activity">https://w3id.org/digitalconstruction/Entities#Activity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="containedInInformationModel">
+        <h3>containedInInformationModel<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#containedInInformationModel</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1674,19 +1729,52 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#hasContainedInInformationModel">hasContainedInInformationModel</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#containedInInformationModel">containedInInformationModel</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="contentRepresentedIn">
+        <h3>contentRepresentedIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#contentRepresentedIn</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The context in which the content of the information content entity is represented
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Information#representsContentOf">representsContentOf</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">dicc:Context</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1707,13 +1795,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1728,34 +1816,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/Entities#Agent">https://w3id.org/digitalconstruction/Entities#Agent</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="hasContainedInInformationModel">
-        <h3>hasContainedInInformationModel<sup title="object property" class="sup-op">op</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Information#hasContainedInInformationModel</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1770,7 +1837,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1791,13 +1858,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1812,13 +1879,46 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/Entities#Agent">https://w3id.org/digitalconstruction/Entities#Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasInformation">
+        <h3>hasInformation<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#hasInformation</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#hasParticipant">dice:hasParticipant</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isInformationIn">isInformationIn</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1833,7 +1933,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1848,13 +1948,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1869,7 +1969,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1890,13 +1990,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isPlannedActiviyOf">isPlannedActiviyOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isPlannedActiviyOf">isPlannedActiviyOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1917,13 +2017,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1944,13 +2044,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1977,19 +2077,19 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2004,7 +2104,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2019,7 +2119,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2040,13 +2140,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -2067,7 +2167,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2082,13 +2182,40 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/Entities#Agent">https://w3id.org/digitalconstruction/Entities#Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isAbout">
+        <h3>isAbout<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#isAbout</code></td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2109,7 +2236,7 @@
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2136,7 +2263,7 @@
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2157,13 +2284,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2190,7 +2317,28 @@
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isTopicOf">
+        <h3>isTopicOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#isTopicOf</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Entity">dice:Entity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2217,7 +2365,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -2238,7 +2386,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -2259,7 +2407,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Notification">Notification</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2274,7 +2422,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2295,7 +2443,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#InformationContentEntity">https://w3id.org/digitalconstruction/Entities#InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -2316,7 +2464,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/0.5/Information#Message">Message</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -2439,6 +2587,12 @@
         <dd><code>https://w3id.org/digitalconstruction/0.5/Information#</code></dd>
         <dt>dc</dt>
         <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
+        <dt>dicc</dt>
+        <dd><code>https://w3id.org/digitalconstruction/0.5/Contexts#</code></dd>
+        <dt>dice</dt>
+        <dd><code>https://w3id.org/digitalconstruction/0.5/Entities#</code></dd>
+        <dt>dicp</dt>
+        <dd><code>https://w3id.org/digitalconstruction/0.5/Processes#</code></dd>
         <dt>owl</dt>
         <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
         <dt>prov</dt>
