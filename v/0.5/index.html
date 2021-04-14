@@ -269,7 +269,9 @@
         <li><a href="#BuildingInformationModel">BuildingInformationModel</a></li>
         <li><a href="#CausalRelationIssue">CausalRelationIssue</a></li>
         <li><a href="#Certificate">Certificate</a></li>
+        <li><a href="#ComputationalFunction">ComputationalFunction</a></li>
         <li><a href="#Contract">Contract</a></li>
+        <li><a href="#DataService">DataService</a></li>
         <li><a href="#Design">Design</a></li>
         <li><a href="#DesignChangeRequest">DesignChangeRequest</a></li>
         <li><a href="#DesignIssue">DesignIssue</a></li>
@@ -310,6 +312,7 @@
         <li><a href="#Scenario">Scenario</a></li>
         <li><a href="#ScopeIssue">ScopeIssue</a></li>
         <li><a href="#ServiceOutageIssue">ServiceOutageIssue</a></li>
+        <li><a href="#SoftwareApplication">SoftwareApplication</a></li>
         <li><a href="#StakeholderIssue">StakeholderIssue</a></li>
         <li><a href="#StatusUpdate">StatusUpdate</a></li>
         <li><a href="#Stream">Stream</a></li>
@@ -403,6 +406,33 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="ComputationalFunction">
+        <h3>ComputationalFunction<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#ComputationalFunction</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A function that inheres in one or more pieces of computing hardware. The actualization or manifestation of a computational function is an essentially end-directed activity in virtue kind or kinds of contexts the computing hardware is made for.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Function">dice:Function</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#encodesComputationalFunction">encodesComputationalFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Contract">
         <h3>Contract<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -427,8 +457,29 @@
                 <td>
                     <a href="#contractorObligation">ContractorObligation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasClient">hasClient</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#clientObligation">ClientObligation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasContractor">hasContractor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#clientObligation">ClientObligation</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DataService">
+        <h3>DataService<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#DataService</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A service that provides data. Aligns with dcat:DataService</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Service">dice:Service</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -455,8 +506,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Drawing">Drawing</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#BuildingInformationModel">BuildingInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Drawing">Drawing</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -504,8 +555,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#DesignChangeRequest">DesignChangeRequest</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ScopeIssue">ScopeIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignChangeRequest">DesignChangeRequest</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -616,8 +667,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -686,14 +737,14 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#SafetyIssue">SafetyIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PreconditionIssue">PreconditionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ExecutionDelay">ExecutionDelay</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#DisturbanceAreaIssue">DisturbanceAreaIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SafetyIssue">SafetyIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PreconditionIssue">PreconditionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -788,35 +839,35 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Video">Video</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PointCloud">PointCloud</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Image">Image</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Video">Video</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PointCloud">PointCloud</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Image">Image</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
                     <a href="#contentRepresentedIn">contentRepresentedIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#representsContentOf">representsContentOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasInformation">hasInformation</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasInformation">hasInformation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#representsContentOf">representsContentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -888,20 +939,20 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#StakeholderIssue">StakeholderIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
                     <a href="#hasSolution">hasSolution</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasHandler">hasHandler</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasScope">hasScope</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -986,21 +1037,21 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Recommendation">Recommendation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isReceiptRequired">isReceiptRequired</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasRecipient">hasRecipient</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasMessageBody">hasMessageBody</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isReceiptRequired">isReceiptRequired</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasSender">hasSender</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1147,20 +1198,20 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#LookaheadPlan">LookaheadPlan</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#MasterPlan">MasterPlan</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#WeekPlan">WeekPlan</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LookaheadPlan">LookaheadPlan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasPlannedActivity">hasPlannedActivity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasObjective">hasObjective</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1193,10 +1244,10 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#OrderingConflict">OrderingConflict</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CausalRelationIssue">CausalRelationIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#OrderingConflict">OrderingConflict</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#UnachievedGoal">UnachievedGoal</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1494,6 +1545,34 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="SoftwareApplication">
+        <h3>SoftwareApplication<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#SoftwareApplication</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A generically dependent continuant that encodes a representation of one or more computational functions (realizable functions)
+(Duncan, William. "Making Ontological Sense of Hardware and Software." https://cse.buffalo.edu/~rapaport/584/S10/duncan09-HWSWOnt.pdf (2009))</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#GenericallyDependentContinuant">dice:GenericallyDependentContinuant</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#encodesComputationalFunction">encodesComputationalFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="StakeholderIssue">
         <h3>StakeholderIssue<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -1632,6 +1711,7 @@
         <li><a href="#containedInInformationModel">containedInInformationModel</a></li>
         <li><a href="#containsInformationContainer">containsInformationContainer</a></li>
         <li><a href="#contentRepresentedIn">contentRepresentedIn</a></li>
+        <li><a href="#encodesComputationalFunction">encodesComputationalFunction</a></li>
         <li><a href="#hasAttachment">hasAttachment</a></li>
         <li><a href="#hasClient">hasClient</a></li>
         <li><a href="#hasContractor">hasContractor</a></li>
@@ -1777,6 +1857,27 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">dicc:Context</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="encodesComputationalFunction">
+        <h3>encodesComputationalFunction<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Information#encodesComputationalFunction</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#SoftwareApplication">SoftwareApplication</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#ComputationalFunction">ComputationalFunction</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1977,7 +2078,7 @@
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Variables#Constraint">https://w3id.org/digitalconstruction/Variables#Constraint</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Variables#Constraint">dicv:Constraint</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2004,7 +2105,7 @@
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Activity">https://w3id.org/digitalconstruction/Entities#Activity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -2624,6 +2725,8 @@
         <dd><code>https://w3id.org/digitalconstruction/0.5/Entities#</code></dd>
         <dt>dicp</dt>
         <dd><code>https://w3id.org/digitalconstruction/0.5/Processes#</code></dd>
+        <dt>dicv</dt>
+        <dd><code>https://w3id.org/digitalconstruction/0.5/Variables#</code></dd>
         <dt>owl</dt>
         <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
         <dt>prov</dt>
