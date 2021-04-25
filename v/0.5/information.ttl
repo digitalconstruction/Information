@@ -72,33 +72,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/0.5/Information#ClientObligation
-:ClientObligation rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Contract ;
-                  rdfs:range dicp:Activity ;
-                  rdfs:label "clientObligation" .
+###  https://w3id.org/digitalconstruction/0.5/Entities#isCarrierOfAtAllTimes
+dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/digitalconstruction/0.5/Information#ContractorObligation
-:ContractorObligation rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Contract ;
-                      rdfs:range dicp:Activity ;
-                      rdfs:label "contractorObligation" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Information#containedInInformationModel
-:containedInInformationModel rdf:type owl:ObjectProperty ;
-                             owl:inverseOf :containsInformationContainer ;
-                             rdfs:domain :InformationContainer ;
-                             rdfs:range :InformationModel ;
-                             rdfs:label "containedInInformationModel" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Information#containsInformationContainer
-:containsInformationContainer rdf:type owl:ObjectProperty ;
-                              rdfs:domain :InformationModel ;
-                              rdfs:range :InformationContainer ;
-                              rdfs:label "containsInformationContainer" .
+###  https://w3id.org/digitalconstruction/0.5/Information#containerIncludedIn
+:containerIncludedIn rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :includesContainer ;
+                     rdfs:domain :InformationContainer ;
+                     rdfs:range :InformationModel ;
+                     rdfs:label "containerIncludedIn" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#contentRepresentedIn
@@ -139,11 +122,25 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
            rdfs:label "hasClient" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasClientObligation
+:hasClientObligation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Contract ;
+                     rdfs:range dicp:Activity ;
+                     rdfs:label "clientObligation" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
                rdfs:range dica:Agent ;
                rdfs:label "hasContractor" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasContractorObligation
+:hasContractorObligation rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Contract ;
+                         rdfs:range dicp:Activity ;
+                         rdfs:label "contractorObligation" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasEvaluationCriteria
@@ -204,6 +201,13 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                   rdfs:label "hasPlanningIssue" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertySpecification
+:hasPropertySpecification rdf:type owl:ObjectProperty ;
+                          rdfs:domain dicv:Property ;
+                          rdfs:range :PropertySpecification ;
+                          rdfs:label "hasPropertySpecification" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasRecipient
 :hasRecipient rdf:type owl:ObjectProperty ;
               owl:inverseOf :isRecipientOf ;
@@ -254,6 +258,22 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
            rdfs:domain :RegulatoryOrder ;
            rdfs:range dica:Agent ;
            rdfs:label "imposedBy" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#includesContainer
+:includesContainer rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :includesContainer ;
+                   rdfs:domain :InformationModel ;
+                   rdfs:range :InformationContainer ;
+                   rdfs:label "includesContainer" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#includesModel
+:includesModel rdf:type owl:ObjectProperty ;
+               owl:inverseOf :modelIncludedIn ;
+               rdfs:domain :InformationModel ;
+               rdfs:range :InformationModel ;
+               rdfs:label "includesModel" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isAbout
@@ -321,6 +341,13 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :isTopicOf rdf:type owl:ObjectProperty ;
            rdfs:domain dice:Entity ;
            rdfs:range :InformationContentEntity .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#modelIncludedIn
+:modelIncludedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :InformationModel ;
+                 rdfs:range :InformationModel ;
+                 rdfs:label "modelIncludedIn" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#representsContentOf
@@ -747,6 +774,12 @@ Note: During the project, the project information model can be used to convey th
 
 Project information model (PIM) is a structured repository of information needed for making decisions during the delivery stage of a Built asset. It should be expected that the amount of information stored in PIM, and the different purposes it will be used for, will mostly increase during project delivery. PIM can include structured and unstructured information. (ISO 19650-1, def. 4.1)""" ;
                          rdfs:label "ProjectInformationModel" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#PropertySpecification
+:PropertySpecification rdf:type owl:Class ;
+                       rdfs:subClassOf :InformationContentEntity ;
+                       rdfs:label "PropertySpecification" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#Recommendation
