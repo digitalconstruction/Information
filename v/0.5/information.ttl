@@ -436,21 +436,29 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyCondition
 :hasPropertyCondition rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PropertyDescription ;
+                      rdfs:range rdfs:Literal ;
                       rdfs:label "hasPropertyCondition" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyMaximumValue
 :hasPropertyMaximumValue rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :PropertyDescription ;
+                         rdfs:range rdfs:Literal ;
                          rdfs:label "hasPropertyMaximumValue" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyMinimumValue
 :hasPropertyMinimumValue rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :PropertyDescription ;
+                         rdfs:range rdfs:Literal ;
                          rdfs:label "hasPropertyMinimumValue" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyValue
 :hasPropertyValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :PropertyDescription ;
+                  rdfs:range rdfs:Literal ;
                   rdfs:label "hasPropertyValue" .
 
 
