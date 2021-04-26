@@ -825,6 +825,12 @@ The links can be represented with RDF triples or more complex structures, as spe
               rdfs:label "ProductIssue" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#Profile
+:Profile rdf:type owl:Class ;
+         rdfs:subClassOf :InformationContentEntity ;
+         rdfs:label "Profile" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#ProjectInformationModel
 :ProjectInformationModel rdf:type owl:Class ;
                          rdfs:subClassOf :InformationModel ,
