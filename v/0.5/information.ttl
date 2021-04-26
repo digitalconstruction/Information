@@ -143,6 +143,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                          rdfs:label "contractorObligation" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasDescribedProperty
+:hasDescribedProperty rdf:type owl:ObjectProperty ;
+                      rdfs:domain :PropertyDescription ;
+                      rdfs:range rdf:Property ;
+                      rdfs:label "hasDescribedProperty" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasEvaluationCriteria
 :hasEvaluationCriteria rdf:type owl:ObjectProperty ;
                        rdfs:domain :Plan ;
@@ -201,8 +208,16 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                   rdfs:label "hasPlanningIssue" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyDescription
+:hasPropertyDescription rdf:type owl:ObjectProperty ;
+                        rdfs:domain dicv:Property ;
+                        rdfs:range :PropertyDescription ;
+                        rdfs:label "hasPropertyDescription" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertySpecification
 :hasPropertySpecification rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasPropertyDescription ;
                           rdfs:domain dicv:Property ;
                           rdfs:range :PropertySpecification ;
                           rdfs:label "hasPropertySpecification" .
@@ -417,6 +432,26 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                                                   ]
                                       ] ;
                            rdfs:label "hasNotificationImportance" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyCondition
+:hasPropertyCondition rdf:type owl:DatatypeProperty ;
+                      rdfs:label "hasPropertyCondition" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyMaximumValue
+:hasPropertyMaximumValue rdf:type owl:DatatypeProperty ;
+                         rdfs:label "hasPropertyMaximumValue" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyMinimumValue
+:hasPropertyMinimumValue rdf:type owl:DatatypeProperty ;
+                         rdfs:label "hasPropertyMinimumValue" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasPropertyValue
+:hasPropertyValue rdf:type owl:DatatypeProperty ;
+                  rdfs:label "hasPropertyValue" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasStatusValue
@@ -807,7 +842,7 @@ Project information model (PIM) is a structured repository of information needed
 ###  https://w3id.org/digitalconstruction/0.5/Information#PropertyHistory
 :PropertyHistory rdf:type owl:Class ;
                  rdfs:subClassOf :PropertyDescription ;
-                 rdfs:comment "Property history is a property description that gives information about the historical development of the values of the high-level aggregate properties. An example is a price index." ;
+                 rdfs:comment "Property history is a property description that gives information about the historical development of the values of the high-level aggregate properties. A property history may contain also predicted future values. An example of  a property history is a price index." ;
                  rdfs:label "PropertyHistory" .
 
 
