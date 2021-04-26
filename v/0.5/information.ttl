@@ -280,7 +280,7 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 :isAbout rdf:type owl:ObjectProperty ;
          owl:inverseOf :isTopicOf ;
          rdfs:domain :InformationContentEntity ;
-         rdfs:range dice:Entity ;
+         rdfs:range owl:Thing ;
          rdfs:label "isAbout" .
 
 
@@ -337,10 +337,18 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
             rdfs:label "isServedBy" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#isSpecifiedBy
+:isSpecifiedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :specifiesProperty ;
+               rdfs:domain :PropertyDescription ;
+               rdfs:range :RegulatoryOrder .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#isTopicOf
 :isTopicOf rdf:type owl:ObjectProperty ;
-           rdfs:domain dice:Entity ;
-           rdfs:range :InformationContentEntity .
+           rdfs:domain owl:Thing ;
+           rdfs:range :InformationContentEntity ;
+           rdfs:label "isTopicOf" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#modelIncludedIn
@@ -363,6 +371,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
         rdfs:domain :DataService ;
         rdfs:range :InformationContentEntity ;
         rdfs:label "serves" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#specifiesProperty
+:specifiesProperty rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RegulatoryOrder ;
+                   rdfs:range :PropertySpecification ;
+                   rdfs:label "specifiesProperty" .
 
 
 #################################################################
@@ -748,6 +763,12 @@ The links can be represented with RDF triples or more complex structures, as spe
                    rdfs:label "PreconditionIssue" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#PriceIndex
+:PriceIndex rdf:type owl:Class ;
+            rdfs:subClassOf :PropertyHistory ;
+            rdfs:label "PriceIndex" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#ProductBreakdownStructure
 :ProductBreakdownStructure rdf:type owl:Class ;
                            rdfs:subClassOf :BreakdownStructure ;
@@ -776,9 +797,24 @@ Project information model (PIM) is a structured repository of information needed
                          rdfs:label "ProjectInformationModel" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#PropertyDescription
+:PropertyDescription rdf:type owl:Class ;
+                     rdfs:subClassOf :InformationContentEntity ;
+                     rdfs:comment "Property description is an information content entity that gives decription of a property. It describes the property in general (it is about the property), not any particular use of the property (not the property of something)." ;
+                     rdfs:label "PropertyDescription" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#PropertyHistory
+:PropertyHistory rdf:type owl:Class ;
+                 rdfs:subClassOf :PropertyDescription ;
+                 rdfs:comment "Property history is a property description that gives information about the historical development of the values of the high-level aggregate properties. An example is a price index." ;
+                 rdfs:label "PropertyHistory" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#PropertySpecification
 :PropertySpecification rdf:type owl:Class ;
-                       rdfs:subClassOf :InformationContentEntity ;
+                       rdfs:subClassOf :PropertyDescription ;
+                       rdfs:comment "Property specification is a property description that defines limits to the values of the property, as given for example in regulations." ;
                        rdfs:label "PropertySpecification" .
 
 
