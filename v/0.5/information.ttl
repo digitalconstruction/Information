@@ -232,6 +232,14 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
               rdfs:label "hasRecipient" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasReferenceDocument
+:hasReferenceDocument rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isCarrierOf ;
+                      rdfs:domain :InformationContainer ;
+                      rdfs:range :File ;
+                      rdfs:label "hasReferenceDocument" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasReply
 :hasReply rdf:type owl:ObjectProperty ;
           owl:inverseOf :isReplyTo ;
