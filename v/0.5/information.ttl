@@ -951,6 +951,12 @@ Project information model (PIM) is a structured repository of information needed
                   rdfs:label "StakeholderIssue" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#Statistic
+:Statistic rdf:type owl:Class ;
+           rdfs:subClassOf :InformationContentEntity ;
+           rdfs:label "Statistic" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#StatusUpdate
 :StatusUpdate rdf:type owl:Class ;
               rdfs:subClassOf :Event ;
