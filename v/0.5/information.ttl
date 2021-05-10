@@ -99,6 +99,15 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                               rdfs:range :ComputationalFunction .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#entryIncludedIn
+:entryIncludedIn rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :containerIncludedIn ;
+                 owl:inverseOf :includesEntry ;
+                 rdfs:domain :CatalogEntry ;
+                 rdfs:range :Catalog ;
+                 rdfs:label "entryIncludedIn" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasAttachment
 :hasAttachment rdf:type owl:ObjectProperty ;
                rdfs:domain :Message ;
@@ -291,6 +300,14 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                    rdfs:label "includesContainer" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#includesEntry
+:includesEntry rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :includesContainer ;
+               rdfs:domain :Catalog ;
+               rdfs:range :CatalogEntry ;
+               rdfs:label "includesEntry" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#includesModel
 :includesModel rdf:type owl:ObjectProperty ;
                owl:inverseOf :modelIncludedIn ;
@@ -317,7 +334,7 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isInformationIn
 :isInformationIn rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf dice:isParticipantIn ;
+                 rdfs:subPropertyOf dice:participatesIn ;
                  rdfs:domain :InformationContentEntity ;
                  rdfs:range dicp:Activity ;
                  rdfs:label "isInformationIn" .
@@ -541,6 +558,20 @@ Asset information model (AIM) is a structured repository of information needed f
                           rdfs:subClassOf :Design ;
                           rdfs:comment "Building Information Model (BIM) is a rich three-dimensional and  object-oriented model of a building." ;
                           rdfs:label "BuildingInformationModel" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#Catalog
+:Catalog rdf:type owl:Class ;
+         rdfs:subClassOf :InformationModel ;
+         rdfs:comment "An information catalog that aligns with dcat:Catalog defined in DCAT2. The purpose is to give summary data, header information and access rights of the entities (typically assets and projects) described in the catalog." ;
+         rdfs:label "Catalog" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#CatalogEntry
+:CatalogEntry rdf:type owl:Class ;
+              rdfs:subClassOf :InformationContainer ;
+              rdfs:comment "A summarized description of an entity (dici:isAbout) whose content can be described in a separate context (dicc:hasContent). This applies to independently represented entities, such as assets, projects and information content entities such as plans, designs, or breakdown structures." ;
+              rdfs:label "CatalogEntry" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#CausalRelationIssue
@@ -961,13 +992,6 @@ Project information model (PIM) is a structured repository of information needed
 :StatusUpdate rdf:type owl:Class ;
               rdfs:subClassOf :Event ;
               rdfs:label "StatusUpdate" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Information#Summary
-:Summary rdf:type owl:Class ;
-         rdfs:subClassOf :InformationContainer ;
-         rdfs:comment "A summarized description of an entity (dici:isAbout) whose content can be described in a separate context (dicc:hasContent). This applies to independently represented entities, such as assets, projects and information content entities such as plans, designs, or breakdown structures." ;
-         rdfs:label "Summary" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#UnachievedGoal
