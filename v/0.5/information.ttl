@@ -332,6 +332,14 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
              rdfs:label "isCarrierOf" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#isCausedByState
+:isCausedByState rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Issue ;
+                 rdfs:range dicv:PropertyState ;
+                 rdfs:comment "The property state that caused the issue" ;
+                 rdfs:label "isCausedByState" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#isInformationIn
 :isInformationIn rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf dice:participatesIn ;
