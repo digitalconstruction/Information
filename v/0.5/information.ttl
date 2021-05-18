@@ -538,9 +538,6 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/digitalconstruction/0.5/Entities#Service
-dice:Service rdf:type owl:Class .
-
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#AssetInformationModel
 :AssetInformationModel rdf:type owl:Class ;
@@ -617,7 +614,7 @@ Asset information model (AIM) is a structured repository of information needed f
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#DataService
 :DataService rdf:type owl:Class ;
-             rdfs:subClassOf dice:Service ;
+             rdfs:subClassOf dicp:Service ;
              rdfs:comment "A service that provides data. Aligns with dcat:DataService" ;
              rdfs:label "DataService" .
 
