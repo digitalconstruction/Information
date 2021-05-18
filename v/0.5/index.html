@@ -195,7 +195,7 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "<p>Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print).</p>"
+        "@value": "<p>Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print).</p>"
       }
     ],
     "https://schema.org/license": [
@@ -241,7 +241,7 @@
     </dl>
     <h2>Description</h2>
     <div id="description">
-        <p>Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print).</p>
+        <p>Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print).</p>
     </div>
 </section>
 <section id="toc">
@@ -301,7 +301,6 @@
         <li><a href="#Message">Message</a></li>
         <li><a href="#NonConformanceIssue">NonConformanceIssue</a></li>
         <li><a href="#Notification">Notification</a></li>
-        <li><a href="#Observation">Observation</a></li>
         <li><a href="#OrderingConflict">OrderingConflict</a></li>
         <li><a href="#PerformanceIndicator">PerformanceIndicator</a></li>
         <li><a href="#Plan">Plan</a></li>
@@ -558,10 +557,10 @@
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#hasClient">hasClient</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#clientObligation">hasClientObligation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#contractorObligation">hasContractorObligation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasContractor">hasContractor</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasClient">hasClient</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -630,9 +629,9 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Design">Design</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#BreakdownStructure">BreakdownStructure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Plan">Plan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -806,7 +805,6 @@
                 <th>Sub-classes</th>
                 <td>
                     <a href="#StatusUpdate">StatusUpdate</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Observation">Observation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -875,14 +873,14 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#DisturbanceAreaIssue">DisturbanceAreaIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionDelay">ExecutionDelay</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SafetyIssue">SafetyIssue</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PreconditionIssue">PreconditionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ServiceOutageIssue">ServiceOutageIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ResourceFailure">ResourceFailure</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ExecutionDelay">ExecutionDelay</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ResourceConflict">ResourceConflict</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#DisturbanceAreaIssue">DisturbanceAreaIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ExecutionFailure">ExecutionFailure</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -909,8 +907,8 @@
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasReferenceDocument">hasReferenceDocument</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -962,15 +960,15 @@
                 <th>Sub-classes</th>
                 <td>
                     <a href="#Dataset">Dataset</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CatalogEntry">CatalogEntry</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Linkset">Linkset</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CatalogEntry">CatalogEntry</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#containerIncludedIn">containerIncludedIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasRootObject">hasRootObject</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#containerIncludedIn">containerIncludedIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasReferenceDocument">hasReferenceDocument</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -1004,43 +1002,43 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Statistic">Statistic</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Video">Video</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PropertyDescription">PropertyDescription</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Profile">Profile</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PointCloud">PointCloud</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Profile">Profile</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Image">Image</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Certificate">Certificate</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Statistic">Statistic</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EvaluationCriteria">EvaluationCriteria</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Issue">Issue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContainer">InformationContainer</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#InformationModel">InformationModel</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Message">Message</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Contract">Contract</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#RegulatoryOrder">RegulatoryOrder</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isServedBy">isServedBy</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#contentRepresentedIn">contentRepresentedIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasCarrier">hasCarrier</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasWebAddress">hasWebAddress</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isServedBy">isServedBy</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isInformationIn">isInformationIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isAbout">isAbout</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#serves">serves</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isCarrierOf">isCarrierOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasInformation">hasInformation</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#representsContentOf">representsContentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isTopicOf">isTopicOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasInformation">hasInformation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#serves">serves</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1065,23 +1063,23 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="https://w3id.org/digitalconstruction/0.5/Contexts#ContextSet">dicc:ContextSet</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#InformationContentEntity">InformationContentEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Catalog">Catalog</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#AssetInformationModel">AssetInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProjectInformationModel">ProjectInformationModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Catalog">Catalog</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#includesContainer">includesContainer</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#includesModel">includesModel</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#includesContainer">includesContainer</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#modelIncludedIn">modelIncludedIn</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -1118,20 +1116,20 @@
                 <th>Sub-classes</th>
                 <td>
                     <a href="#DesignIssue">DesignIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StakeholderIssue">StakeholderIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProductIssue">ProductIssue</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ExecutionIssue">ExecutionIssue</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#PlanningIssue">PlanningIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StakeholderIssue">StakeholderIssue</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasScope">hasScope</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isCausedByState">isCausedByState</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSolution">hasSolution</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasParentIssue">hasParentIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasScope">hasScope</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasHandler">hasHandler</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSolution">hasSolution</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isCausedByState">isCausedByState</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1180,8 +1178,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#CrossFileLinkset">CrossFileLinkset</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#LinkedDataLinkset">LinkedDataLinkset</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CrossFileLinkset">CrossFileLinkset</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1253,30 +1251,30 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Recommendation">Recommendation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Notification">Notification</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasRecipient">hasRecipient</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSender">hasSender</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasMessageBody">hasMessageBody</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasAttachment">hasAttachment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSender">hasSender</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasMessageBody">hasMessageBody</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasMessageSubject">hasMessageSubject</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#isReceiptRequired">isReceiptRequired</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasReply">hasReply</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSenderOf">isSenderOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isReplyTo">isReplyTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isRecipientOf">isRecipientOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1325,27 +1323,6 @@
                 <th>In domain of</th>
                 <td>
                     <a href="#hasNotificationImportance">hasNotificationImportance</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Observation">
-        <h3>Observation<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Information#Observation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA).</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1414,20 +1391,20 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MasterPlan">MasterPlan</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#WeekPlan">WeekPlan</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Scenario">Scenario</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#LookaheadPlan">LookaheadPlan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#WeekPlan">WeekPlan</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MasterPlan">MasterPlan</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasPlannedActivity">hasPlannedActivity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasObjective">hasObjective</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasPlanningIssue">hasPlanningIssue</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasObjective">hasObjective</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlannedActivity">hasPlannedActivity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasEvaluationCriteria">hasEvaluationCriteria</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPlanConstraint">hasPlanConstraint</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1460,10 +1437,10 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#UnachievedGoal">UnachievedGoal</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CausalRelationIssue">CausalRelationIssue</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UnachievedGoal">UnachievedGoal</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#OrderingConflict">OrderingConflict</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#UnexecutableActivity">UnexecutableActivity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1640,12 +1617,12 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasDescribedProperty">hasDescribedProperty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasPropertyMinimumValue">hasPropertyMinimumValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasPropertyMaximumValue">hasPropertyMaximumValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasPropertyValue">hasPropertyValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasPropertyCondition">hasPropertyCondition</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasDescribedProperty">hasDescribedProperty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isSpecifiedBy">isSpecifiedBy</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasPropertyValue">hasPropertyValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasPropertyMaximumValue">hasPropertyMaximumValue</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1705,8 +1682,8 @@
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#specifiesProperty">specifiesProperty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasPropertySpecification">hasPropertySpecification</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#specifiesProperty">specifiesProperty</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1754,8 +1731,8 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#imposedBy">imposedBy</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#specifiesProperty">specifiesProperty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#imposedBy">imposedBy</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>

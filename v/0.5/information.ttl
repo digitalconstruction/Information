@@ -24,7 +24,7 @@
                                                         terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                         vann:preferredNamespacePrefix "dici" ;
                                                         vann:preferredNamespaceUri "https://w3id.org/digitalconstruction/0.5/Information" ;
-                                                        rdfs:comment "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, observations, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ;
+                                                        rdfs:comment "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ;
                                                         rdfs:label "Digital Construction Information" ;
                                                         rdfs:seeAlso <https://w3id.org/digitalconstruction/0.5/> .
 
@@ -538,7 +538,6 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-
 ###  https://w3id.org/digitalconstruction/0.5/Information#AssetInformationModel
 :AssetInformationModel rdf:type owl:Class ;
                        rdfs:subClassOf :InformationModel ,
@@ -800,13 +799,6 @@ The links can be represented with RDF triples or more complex structures, as spe
               rdfs:subClassOf :Message ;
               rdfs:comment "Notification is a message to inform recipients in a controlled manner about a situation they need to be aware of" ;
               rdfs:label "Notification" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Information#Observation
-:Observation rdf:type owl:Class ;
-             rdfs:subClassOf :Event ;
-             rdfs:comment "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with. (definition from SOSA)." ;
-             rdfs:label "Observation" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#OrderingConflict
