@@ -138,6 +138,11 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                      rdfs:label "clientObligation" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasContainerState
+:hasContainerState rdf:type owl:ObjectProperty ;
+                   rdfs:domain :InformationContainer .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasContractor
 :hasContractor rdf:type owl:ObjectProperty ;
                rdfs:domain :Contract ;
@@ -354,6 +359,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                     rdfs:range :Plan .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#isProducedBy
+:isProducedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :InformationContainer ;
+              rdfs:range dice:MaterialEntity ;
+              rdfs:label "isProducedBy" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#isRecipientOf
 :isRecipientOf rdf:type owl:ObjectProperty ;
                rdfs:domain dica:Agent ;
@@ -525,6 +537,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                rdfs:range xsd:anyURI ;
                rdfs:comment "An Web address (URI) from which the information content entity can be accessed" ;
                rdfs:label "hasWebAddress" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#isProducedAt
+:isProducedAt rdf:type owl:DatatypeProperty ;
+              rdfs:domain :InformationContentEntity ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "isProducedAt" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isReceiptRequired
