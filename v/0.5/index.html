@@ -345,15 +345,26 @@
    <h2>
     Overview
    </h2>
-   <h2>
+   <h3>
     Information-related classes
-   </h2>
+   </h3>
+   <p>
+    The figure below shows the most important classes of Digital
+Construction Information ontology, related to the classes of other
+imported and aligned ontologies. In addition, the correspondence with
+the terms defined in the ISO 19650 are also indicated.
+   </p>
    <p>
     <img src="information-classes.svg" width="80%"/>
    </p>
-   <h2>
+   <h3>
     Example of an information model
-   </h2>
+   </h3>
+   <p>
+    The figure shown an example of an Information Model based on a
+discipline-based federation approach, as defined in the
+ISO 19650.
+   </p>
    <p>
     <img src="information-container-example.svg" width="80%"/>
    </p>
@@ -821,13 +832,6 @@
        Sub-classes
       </th>
       <td>
-       <a href="#WorkBreakdownStructure">
-        WorkBreakdownStructure
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#LocationBreakdownStructure">
         LocationBreakdownStructure
        </a>
@@ -837,6 +841,13 @@
        <br/>
        <a href="#ProductBreakdownStructure">
         ProductBreakdownStructure
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#WorkBreakdownStructure">
+        WorkBreakdownStructure
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1217,15 +1228,8 @@
        In domain of
       </th>
       <td>
-       <a href="#clientObligation">
-        hasClientObligation
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasContractor">
-        hasContractor
+       <a href="#hasClient">
+        hasClient
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1238,8 +1242,15 @@
         op
        </sup>
        <br/>
-       <a href="#hasClient">
-        hasClient
+       <a href="#clientObligation">
+        hasClientObligation
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasContractor">
+        hasContractor
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1392,6 +1403,13 @@
        Sub-classes
       </th>
       <td>
+       <a href="#BreakdownStructure">
+        BreakdownStructure
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Plan">
         Plan
        </a>
@@ -1401,13 +1419,6 @@
        <br/>
        <a href="#Design">
         Design
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#BreakdownStructure">
-        BreakdownStructure
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1464,15 +1475,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#BuildingInformationModel">
-        BuildingInformationModel
+       <a href="#Drawing">
+        Drawing
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Drawing">
-        Drawing
+       <a href="#BuildingInformationModel">
+        BuildingInformationModel
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1573,15 +1584,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#DesignChangeRequest">
-        DesignChangeRequest
+       <a href="#ScopeIssue">
+        ScopeIssue
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#ScopeIssue">
-        ScopeIssue
+       <a href="#DesignChangeRequest">
+        DesignChangeRequest
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1934,8 +1945,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#DisturbanceAreaIssue">
-        DisturbanceAreaIssue
+       <a href="#SafetyIssue">
+        SafetyIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1962,6 +1973,13 @@
         c
        </sup>
        <br/>
+       <a href="#DisturbanceAreaIssue">
+        DisturbanceAreaIssue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#PreconditionIssue">
         PreconditionIssue
        </a>
@@ -1971,13 +1989,6 @@
        <br/>
        <a href="#ServiceOutageIssue">
         ServiceOutageIssue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#SafetyIssue">
-        SafetyIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2045,15 +2056,15 @@
        In range of
       </th>
       <td>
-       <a href="#hasCarrier">
-        hasCarrier
+       <a href="#hasReferenceDocument">
+        hasReferenceDocument
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasReferenceDocument">
-        hasReferenceDocument
+       <a href="#hasCarrier">
+        hasCarrier
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2146,15 +2157,15 @@
        Super-classes
       </th>
       <td>
-       <a href="#InformationContentEntity">
-        InformationContentEntity
+       <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">
+        dicc:Context
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">
-        dicc:Context
+       <a href="#InformationContentEntity">
+        InformationContentEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2167,8 +2178,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Linkset">
-        Linkset
+       <a href="#CatalogEntry">
+        CatalogEntry
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2181,8 +2192,8 @@
         c
        </sup>
        <br/>
-       <a href="#CatalogEntry">
-        CatalogEntry
+       <a href="#Linkset">
+        Linkset
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2195,13 +2206,6 @@
        In domain of
       </th>
       <td>
-       <a href="#containerIncludedIn">
-        containerIncludedIn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasReferenceDocument">
         hasReferenceDocument
        </a>
@@ -2216,8 +2220,8 @@
         op
        </sup>
        <br/>
-       <a href="#hasRootObject">
-        hasRootObject
+       <a href="#containerIncludedIn">
+        containerIncludedIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2225,6 +2229,13 @@
        <br/>
        <a href="#hasContainerState">
         hasContainerState
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasRootObject">
+        hasRootObject
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2339,64 +2350,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#InformationContainer">
-        InformationContainer
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Profile">
-        Profile
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Video">
-        Video
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#PointCloud">
-        PointCloud
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Event">
-        Event
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#Image">
         Image
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Statistic">
-        Statistic
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#EvaluationCriteria">
-        EvaluationCriteria
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Contract">
-        Contract
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2409,6 +2364,13 @@
         c
        </sup>
        <br/>
+       <a href="#Issue">
+        Issue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#Certificate">
         Certificate
        </a>
@@ -2416,8 +2378,29 @@
         c
        </sup>
        <br/>
-       <a href="#Message">
-        Message
+       <a href="#PointCloud">
+        PointCloud
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Statistic">
+        Statistic
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Event">
+        Event
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Video">
+        Video
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2430,6 +2413,20 @@
         c
        </sup>
        <br/>
+       <a href="#Profile">
+        Profile
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Message">
+        Message
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#InformationModel">
         InformationModel
        </a>
@@ -2437,8 +2434,22 @@
         c
        </sup>
        <br/>
-       <a href="#Issue">
-        Issue
+       <a href="#InformationContainer">
+        InformationContainer
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Contract">
+        Contract
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#EvaluationCriteria">
+        EvaluationCriteria
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2451,29 +2462,8 @@
        In domain of
       </th>
       <td>
-       <a href="#hasCarrier">
-        hasCarrier
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#contentRepresentedIn">
-        contentRepresentedIn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isInformationIn">
-        isInformationIn
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasWebAddress">
-        hasWebAddress
+       <a href="#isProducedAt">
+        isProducedAt
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -2486,8 +2476,29 @@
         op
        </sup>
        <br/>
-       <a href="#isProducedAt">
-        isProducedAt
+       <a href="#hasCarrier">
+        hasCarrier
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isInformationIn">
+        isInformationIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#contentRepresentedIn">
+        contentRepresentedIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasWebAddress">
+        hasWebAddress
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -2507,6 +2518,20 @@
        In range of
       </th>
       <td>
+       <a href="#hasAttachment">
+        hasAttachment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isCarrierOf">
+        isCarrierOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#serves">
         serves
        </a>
@@ -2514,8 +2539,8 @@
         op
        </sup>
        <br/>
-       <a href="#hasAttachment">
-        hasAttachment
+       <a href="#hasInformation">
+        hasInformation
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2530,20 +2555,6 @@
        <br/>
        <a href="#isTopicOf">
         isTopicOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isCarrierOf">
-        isCarrierOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasInformation">
-        hasInformation
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2598,15 +2609,15 @@
        Super-classes
       </th>
       <td>
-       <a href="#InformationContentEntity">
-        InformationContentEntity
+       <a href="https://w3id.org/digitalconstruction/0.5/Contexts#ContextSet">
+        dicc:ContextSet
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="https://w3id.org/digitalconstruction/0.5/Contexts#ContextSet">
-        dicc:ContextSet
+       <a href="#InformationContentEntity">
+        InformationContentEntity
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2619,8 +2630,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Catalog">
-        Catalog
+       <a href="#AssetInformationModel">
+        AssetInformationModel
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2633,8 +2644,8 @@
         c
        </sup>
        <br/>
-       <a href="#AssetInformationModel">
-        AssetInformationModel
+       <a href="#Catalog">
+        Catalog
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2647,6 +2658,13 @@
        In domain of
       </th>
       <td>
+       <a href="#includesContainer">
+        includesContainer
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#modelIncludedIn">
         modelIncludedIn
        </a>
@@ -2656,13 +2674,6 @@
        <br/>
        <a href="#includesModel">
         includesModel
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#includesContainer">
-        includesContainer
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2682,15 +2693,15 @@
         op
        </sup>
        <br/>
-       <a href="#modelIncludedIn">
-        modelIncludedIn
+       <a href="#includesModel">
+        includesModel
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#includesModel">
-        includesModel
+       <a href="#modelIncludedIn">
+        modelIncludedIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2747,15 +2758,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#PlanningIssue">
-        PlanningIssue
+       <a href="#DesignIssue">
+        DesignIssue
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#ExecutionIssue">
-        ExecutionIssue
+       <a href="#PlanningIssue">
+        PlanningIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2768,8 +2779,8 @@
         c
        </sup>
        <br/>
-       <a href="#DesignIssue">
-        DesignIssue
+       <a href="#ExecutionIssue">
+        ExecutionIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2789,22 +2800,8 @@
        In domain of
       </th>
       <td>
-       <a href="#hasHandler">
-        hasHandler
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasParentIssue">
         hasParentIssue
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasScope">
-        hasScope
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2817,8 +2814,22 @@
         op
        </sup>
        <br/>
+       <a href="#hasHandler">
+        hasHandler
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isCausedByState">
         isCausedByState
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasScope">
+        hasScope
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2926,15 +2937,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#LinkedDataLinkset">
-        LinkedDataLinkset
+       <a href="#CrossFileLinkset">
+        CrossFileLinkset
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#CrossFileLinkset">
-        CrossFileLinkset
+       <a href="#LinkedDataLinkset">
+        LinkedDataLinkset
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3114,8 +3125,8 @@
        In domain of
       </th>
       <td>
-       <a href="#hasMessageSubject">
-        hasMessageSubject
+       <a href="#hasMessageBody">
+        hasMessageBody
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -3128,8 +3139,36 @@
         op
        </sup>
        <br/>
+       <a href="#hasSender">
+        hasSender
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasMessageSubject">
+        hasMessageSubject
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
+       <a href="#hasAttachment">
+        hasAttachment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasReply">
         hasReply
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isReplyTo">
+        isReplyTo
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3142,22 +3181,15 @@
         dp
        </sup>
        <br/>
-       <a href="#hasMessageBody">
-        hasMessageBody
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
-       <a href="#hasSender">
-        hasSender
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasAttachment">
-        hasAttachment
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#hasReply">
+        hasReply
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3170,13 +3202,6 @@
         op
        </sup>
        <br/>
-      </td>
-     </tr>
-     <tr>
-      <th>
-       In range of
-      </th>
-      <td>
        <a href="#isSenderOf">
         isSenderOf
        </a>
@@ -3186,20 +3211,6 @@
        <br/>
        <a href="#isRecipientOf">
         isRecipientOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isReplyTo">
-        isReplyTo
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasReply">
-        hasReply
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3446,8 +3457,8 @@
        Sub-classes
       </th>
       <td>
-       <a href="#Scenario">
-        Scenario
+       <a href="#WeekPlan">
+        WeekPlan
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3460,8 +3471,8 @@
         c
        </sup>
        <br/>
-       <a href="#WeekPlan">
-        WeekPlan
+       <a href="#Scenario">
+        Scenario
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3495,13 +3506,6 @@
         op
        </sup>
        <br/>
-       <a href="#hasObjective">
-        hasObjective
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasPlannedActivity">
         hasPlannedActivity
        </a>
@@ -3511,6 +3515,13 @@
        <br/>
        <a href="#hasEvaluationCriteria">
         hasEvaluationCriteria
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasObjective">
+        hasObjective
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3581,15 +3592,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#OrderingConflict">
-        OrderingConflict
+       <a href="#CausalRelationIssue">
+        CausalRelationIssue
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#CausalRelationIssue">
-        CausalRelationIssue
+       <a href="#OrderingConflict">
+        OrderingConflict
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3985,15 +3996,15 @@
        Sub-classes
       </th>
       <td>
-       <a href="#PropertySpecification">
-        PropertySpecification
+       <a href="#PropertyHistory">
+        PropertyHistory
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#PropertyHistory">
-        PropertyHistory
+       <a href="#PropertySpecification">
+        PropertySpecification
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4006,6 +4017,20 @@
        In domain of
       </th>
       <td>
+       <a href="#hasDescribedProperty">
+        hasDescribedProperty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasPropertyCondition">
+        hasPropertyCondition
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
        <a href="#hasPropertyMaximumValue">
         hasPropertyMaximumValue
        </a>
@@ -4013,8 +4038,8 @@
         dp
        </sup>
        <br/>
-       <a href="#hasDescribedProperty">
-        hasDescribedProperty
+       <a href="#isSpecifiedBy">
+        isSpecifiedBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4032,20 +4057,6 @@
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
-       </sup>
-       <br/>
-       <a href="#hasPropertyCondition">
-        hasPropertyCondition
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
-       <a href="#isSpecifiedBy">
-        isSpecifiedBy
-       </a>
-       <sup class="sup-op" title="object property">
-        op
        </sup>
        <br/>
       </td>
@@ -4171,15 +4182,15 @@
        In range of
       </th>
       <td>
-       <a href="#specifiesProperty">
-        specifiesProperty
+       <a href="#hasPropertySpecification">
+        hasPropertySpecification
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasPropertySpecification">
-        hasPropertySpecification
+       <a href="#specifiesProperty">
+        specifiesProperty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4280,15 +4291,15 @@
        In domain of
       </th>
       <td>
-       <a href="#specifiesProperty">
-        specifiesProperty
+       <a href="#imposedBy">
+        imposedBy
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#imposedBy">
-        imposedBy
+       <a href="#specifiesProperty">
+        specifiesProperty
        </a>
        <sup class="sup-op" title="object property">
         op
