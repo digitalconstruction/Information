@@ -832,8 +832,8 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#LocationBreakdownStructure">
-        LocationBreakdownStructure
+       <a href="#WorkBreakdownStructure">
+        WorkBreakdownStructure
        </a>
        <sup class="sup-c" title="class">
         c
@@ -846,8 +846,8 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#WorkBreakdownStructure">
-        WorkBreakdownStructure
+       <a href="#LocationBreakdownStructure">
+        LocationBreakdownStructure
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1228,15 +1228,15 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasClient">
-        hasClient
+       <a href="#contractorObligation">
+        hasContractorObligation
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#contractorObligation">
-        hasContractorObligation
+       <a href="#hasClient">
+        hasClient
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1410,15 +1410,15 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#Plan">
-        Plan
+       <a href="#Design">
+        Design
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Design">
-        Design
+       <a href="#Plan">
+        Plan
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1945,22 +1945,8 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#SafetyIssue">
-        SafetyIssue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#ResourceFailure">
-        ResourceFailure
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#ExecutionFailure">
-        ExecutionFailure
+       <a href="#ResourceConflict">
+        ResourceConflict
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1973,15 +1959,8 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#DisturbanceAreaIssue">
-        DisturbanceAreaIssue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#PreconditionIssue">
-        PreconditionIssue
+       <a href="#ResourceFailure">
+        ResourceFailure
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1994,8 +1973,29 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#ResourceConflict">
-        ResourceConflict
+       <a href="#SafetyIssue">
+        SafetyIssue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#PreconditionIssue">
+        PreconditionIssue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#ExecutionFailure">
+        ExecutionFailure
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#DisturbanceAreaIssue">
+        DisturbanceAreaIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2056,15 +2056,15 @@ ISO 19650.
        In range of
       </th>
       <td>
-       <a href="#hasReferenceDocument">
-        hasReferenceDocument
+       <a href="#hasCarrier">
+        hasCarrier
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasCarrier">
-        hasCarrier
+       <a href="#hasReferenceDocument">
+        hasReferenceDocument
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2157,6 +2157,13 @@ ISO 19650.
        Super-classes
       </th>
       <td>
+       <a href="#InformationContentEntity">
+        InformationContentEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">
         dicc:Context
        </a>
@@ -2164,8 +2171,21 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#InformationContentEntity">
-        InformationContentEntity
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Restrictions
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#hasEntityState">
+        dice:hasEntityState
+       </a>
+       <span class="cardinality">
+        only
+       </span>
+       <a href="#InformationContainerState">
+        InformationContainerState
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2185,15 +2205,15 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#Dataset">
-        Dataset
+       <a href="#Linkset">
+        Linkset
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Linkset">
-        Linkset
+       <a href="#Dataset">
+        Dataset
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2206,13 +2226,6 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasReferenceDocument">
-        hasReferenceDocument
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#isProducedBy">
         isProducedBy
        </a>
@@ -2220,8 +2233,8 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#containerIncludedIn">
-        containerIncludedIn
+       <a href="#hasRootObject">
+        hasRootObject
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2234,8 +2247,15 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#hasRootObject">
-        hasRootObject
+       <a href="#containerIncludedIn">
+        containerIncludedIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasReferenceDocument">
+        hasReferenceDocument
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2350,15 +2370,15 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#Image">
-        Image
+       <a href="#Statistic">
+        Statistic
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#RegulatoryOrder">
-        RegulatoryOrder
+       <a href="#Profile">
+        Profile
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2378,15 +2398,8 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#PointCloud">
-        PointCloud
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Statistic">
-        Statistic
+       <a href="#InformationModel">
+        InformationModel
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2399,22 +2412,8 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#Video">
-        Video
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#PropertyDescription">
-        PropertyDescription
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Profile">
-        Profile
+       <a href="#InformationContainer">
+        InformationContainer
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2427,22 +2426,36 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#InformationModel">
-        InformationModel
+       <a href="#PointCloud">
+        PointCloud
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#InformationContainer">
-        InformationContainer
+       <a href="#Image">
+        Image
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Contract">
-        Contract
+       <a href="#PropertyDescription">
+        PropertyDescription
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#RegulatoryOrder">
+        RegulatoryOrder
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#Video">
+        Video
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2455,6 +2468,13 @@ ISO 19650.
         c
        </sup>
        <br/>
+       <a href="#Contract">
+        Contract
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -2462,6 +2482,13 @@ ISO 19650.
        In domain of
       </th>
       <td>
+       <a href="#hasWebAddress">
+        hasWebAddress
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
+       </sup>
+       <br/>
        <a href="#isProducedAt">
         isProducedAt
        </a>
@@ -2469,15 +2496,22 @@ ISO 19650.
         dp
        </sup>
        <br/>
-       <a href="#isServedBy">
-        isServedBy
+       <a href="#hasCarrier">
+        hasCarrier
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasCarrier">
-        hasCarrier
+       <a href="#documentsProperty">
+        documentsProperty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isServedBy">
+        isServedBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2490,22 +2524,15 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#contentRepresentedIn">
-        contentRepresentedIn
+       <a href="#isAbout">
+        isAbout
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasWebAddress">
-        hasWebAddress
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
-       <a href="#isAbout">
-        isAbout
+       <a href="#contentRepresentedIn">
+        contentRepresentedIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2518,29 +2545,15 @@ ISO 19650.
        In range of
       </th>
       <td>
-       <a href="#hasAttachment">
-        hasAttachment
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isCarrierOf">
-        isCarrierOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#serves">
-        serves
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasInformation">
         hasInformation
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isDocumentedBy">
+        isDocumentedBy
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2553,8 +2566,29 @@ ISO 19650.
         op
        </sup>
        <br/>
+       <a href="#isCarrierOf">
+        isCarrierOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasAttachment">
+        hasAttachment
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isTopicOf">
         isTopicOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#serves">
+        serves
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2637,15 +2671,15 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#ProjectInformationModel">
-        ProjectInformationModel
+       <a href="#Catalog">
+        Catalog
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Catalog">
-        Catalog
+       <a href="#ProjectInformationModel">
+        ProjectInformationModel
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2693,15 +2727,15 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#includesModel">
-        includesModel
+       <a href="#modelIncludedIn">
+        modelIncludedIn
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#modelIncludedIn">
-        modelIncludedIn
+       <a href="#includesModel">
+        includesModel
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2758,6 +2792,13 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
+       <a href="#ExecutionIssue">
+        ExecutionIssue
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
        <a href="#DesignIssue">
         DesignIssue
        </a>
@@ -2779,13 +2820,6 @@ ISO 19650.
         c
        </sup>
        <br/>
-       <a href="#ExecutionIssue">
-        ExecutionIssue
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#StakeholderIssue">
         StakeholderIssue
        </a>
@@ -2800,15 +2834,8 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasParentIssue">
-        hasParentIssue
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasSolution">
-        hasSolution
+       <a href="#hasScope">
+        hasScope
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2821,15 +2848,22 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#isCausedByState">
-        isCausedByState
+       <a href="#hasSolution">
+        hasSolution
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasScope">
-        hasScope
+       <a href="#hasParentIssue">
+        hasParentIssue
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isCausedByState">
+        isCausedByState
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2937,15 +2971,15 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#CrossFileLinkset">
-        CrossFileLinkset
+       <a href="#LinkedDataLinkset">
+        LinkedDataLinkset
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#LinkedDataLinkset">
-        LinkedDataLinkset
+       <a href="#CrossFileLinkset">
+        CrossFileLinkset
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3125,22 +3159,15 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasMessageBody">
-        hasMessageBody
-       </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
-       </sup>
-       <br/>
-       <a href="#hasRecipient">
-        hasRecipient
+       <a href="#hasAttachment">
+        hasAttachment
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasSender">
-        hasSender
+       <a href="#hasRecipient">
+        hasRecipient
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3153,8 +3180,8 @@ ISO 19650.
         dp
        </sup>
        <br/>
-       <a href="#hasAttachment">
-        hasAttachment
+       <a href="#hasSender">
+        hasSender
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3172,6 +3199,13 @@ ISO 19650.
        </a>
        <sup class="sup-op" title="object property">
         op
+       </sup>
+       <br/>
+       <a href="#hasMessageBody">
+        hasMessageBody
+       </a>
+       <sup class="sup-dp" title="datatype property">
+        dp
        </sup>
        <br/>
        <a href="#isReceiptRequired">
@@ -3195,13 +3229,6 @@ ISO 19650.
         op
        </sup>
        <br/>
-       <a href="#isReplyTo">
-        isReplyTo
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#isSenderOf">
         isSenderOf
        </a>
@@ -3211,6 +3238,13 @@ ISO 19650.
        <br/>
        <a href="#isRecipientOf">
         isRecipientOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isReplyTo">
+        isReplyTo
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3457,22 +3491,8 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#WeekPlan">
-        WeekPlan
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        <a href="#MasterPlan">
         MasterPlan
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
-       <a href="#Scenario">
-        Scenario
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3485,6 +3505,20 @@ ISO 19650.
         c
        </sup>
        <br/>
+       <a href="#Scenario">
+        Scenario
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+       <a href="#WeekPlan">
+        WeekPlan
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
       </td>
      </tr>
      <tr>
@@ -3492,22 +3526,15 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasPlanningIssue">
-        hasPlanningIssue
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasPlanConstraint">
-        hasPlanConstraint
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasPlannedActivity">
         hasPlannedActivity
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasPlanningIssue">
+        hasPlanningIssue
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3522,6 +3549,13 @@ ISO 19650.
        <br/>
        <a href="#hasObjective">
         hasObjective
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasPlanConstraint">
+        hasPlanConstraint
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -3592,15 +3626,15 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#CausalRelationIssue">
-        CausalRelationIssue
+       <a href="#OrderingConflict">
+        OrderingConflict
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#OrderingConflict">
-        OrderingConflict
+       <a href="#CausalRelationIssue">
+        CausalRelationIssue
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3996,15 +4030,15 @@ ISO 19650.
        Sub-classes
       </th>
       <td>
-       <a href="#PropertyHistory">
-        PropertyHistory
+       <a href="#PropertySpecification">
+        PropertySpecification
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#PropertySpecification">
-        PropertySpecification
+       <a href="#PropertyHistory">
+        PropertyHistory
        </a>
        <sup class="sup-c" title="class">
         c
@@ -4017,11 +4051,11 @@ ISO 19650.
        In domain of
       </th>
       <td>
-       <a href="#hasDescribedProperty">
-        hasDescribedProperty
+       <a href="#hasPropertyValue">
+        hasPropertyValue
        </a>
-       <sup class="sup-op" title="object property">
-        op
+       <sup class="sup-dp" title="datatype property">
+        dp
        </sup>
        <br/>
        <a href="#hasPropertyCondition">
@@ -4038,8 +4072,8 @@ ISO 19650.
         dp
        </sup>
        <br/>
-       <a href="#isSpecifiedBy">
-        isSpecifiedBy
+       <a href="#hasDescribedProperty">
+        hasDescribedProperty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -4052,11 +4086,11 @@ ISO 19650.
         dp
        </sup>
        <br/>
-       <a href="#hasPropertyValue">
-        hasPropertyValue
+       <a href="#isSpecifiedBy">
+        isSpecifiedBy
        </a>
-       <sup class="sup-dp" title="datatype property">
-        dp
+       <sup class="sup-op" title="object property">
+        op
        </sup>
        <br/>
       </td>
@@ -4182,15 +4216,15 @@ ISO 19650.
        In range of
       </th>
       <td>
-       <a href="#hasPropertySpecification">
-        hasPropertySpecification
+       <a href="#specifiesProperty">
+        specifiesProperty
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#specifiesProperty">
-        specifiesProperty
+       <a href="#hasPropertySpecification">
+        hasPropertySpecification
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -5037,6 +5071,11 @@ ISO 19650.
      </a>
     </li>
     <li>
+     <a href="#documentsProperty">
+      documentsProperty
+     </a>
+    </li>
+    <li>
      <a href="#encodesComputationalFunction">
       encodesComputationalFunction
      </a>
@@ -5204,6 +5243,11 @@ ISO 19650.
     <li>
      <a href="#isCausedByState">
       isCausedByState
+     </a>
+    </li>
+    <li>
+     <a href="#isDocumentedBy">
+      isDocumentedBy
      </a>
     </li>
     <li>
@@ -5410,6 +5454,65 @@ ISO 19650.
       <td>
        <a href="https://w3id.org/digitalconstruction/0.5/Contexts#Context">
         dicc:Context
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="documentsProperty">
+    <h3>
+     documentsProperty
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Information#documentsProperty
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isDocumentedBy">
+        isDocumentedBy
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#InformationContentEntity">
+        InformationContentEntity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">
+        dicv:Property
        </a>
        <sup class="sup-c" title="class">
         c
@@ -7154,6 +7257,52 @@ ISO 19650.
       <td>
        <a href="https://w3id.org/digitalconstruction/0.5/Variables#PropertyState">
         dicv:PropertyState
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isDocumentedBy">
+    <h3>
+     isDocumentedBy
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Information#isDocumentedBy
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="https://w3id.org/digitalconstruction/0.5/Variables#Property">
+        dicv:Property
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#InformationContentEntity">
+        InformationContentEntity
        </a>
        <sup class="sup-c" title="class">
         c

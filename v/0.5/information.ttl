@@ -93,6 +93,14 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                       rdfs:label "contentRepresentedIn" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#documentsProperty
+:documentsProperty rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isDocumentedBy ;
+                   rdfs:domain :InformationContentEntity ;
+                   rdfs:range dicv:Property ;
+                   rdfs:label "documentsProperty" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#encodesComputationalFunction
 :encodesComputationalFunction rdf:type owl:ObjectProperty ;
                               rdfs:domain :SoftwareApplication ;
@@ -343,6 +351,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                  rdfs:range dicv:PropertyState ;
                  rdfs:comment "The property state that caused the issue" ;
                  rdfs:label "isCausedByState" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#isDocumentedBy
+:isDocumentedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain dicv:Property ;
+                rdfs:range :InformationContentEntity ;
+                rdfs:label "isDocumentedBy" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isInformationIn
@@ -727,7 +742,11 @@ Asset information model (AIM) is a structured repository of information needed f
 ###  https://w3id.org/digitalconstruction/0.5/Information#InformationContainer
 :InformationContainer rdf:type owl:Class ;
                       rdfs:subClassOf dicc:Context ,
-                                      :InformationContentEntity ;
+                                      :InformationContentEntity ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty dice:hasEntityState ;
+                                        owl:allValuesFrom :InformationContainerState
+                                      ] ;
                       rdfs:comment """InformationContainer is a named persistent set of information (ISO 19650-1 3.3.1) retrievable from within a file, system or application storage hierarchy (ISO 19650-1 def. 3.3.12)
 
 InformationContainer needs to be used when there is a need to represent information contents that consist of indefinite set of statements (composed of indefinite set of entities with indefinite set of mutual relations), that can create complex networks. Examples are complex designs, plans, linksets, and so on. 
