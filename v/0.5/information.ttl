@@ -146,6 +146,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                      rdfs:label "clientObligation" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasContainerSet
+:hasContainerSet rdf:type owl:ObjectProperty ;
+                 rdfs:domain :InformationModel ;
+                 rdfs:range dicc:ContextSet ;
+                 rdfs:label "hasContainerSet" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasContainerState
 :hasContainerState rdf:type owl:ObjectProperty ;
                    rdfs:domain :InformationContainer .
@@ -163,6 +170,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                          rdfs:domain :Contract ;
                          rdfs:range dicp:Activity ;
                          rdfs:label "contractorObligation" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasDefaultContainerSet
+:hasDefaultContainerSet rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasContainerSet ;
+                        rdfs:domain :InformationModel ;
+                        rdfs:range dicc:ContextSet .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasDescribedProperty
