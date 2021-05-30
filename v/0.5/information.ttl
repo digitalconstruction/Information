@@ -176,7 +176,8 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
 :hasDefaultContainerSet rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasContainerSet ;
                         rdfs:domain :InformationModel ;
-                        rdfs:range dicc:ContextSet .
+                        rdfs:range dicc:ContextSet ;
+                        rdfs:label "hasDefaultContainerSet" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasDescribedProperty
@@ -209,10 +210,22 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                 rdfs:label "hasInformation" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Information#hasInputInformation
+:hasInputInformation rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasInformation ;
+                     rdfs:label "hasInputInformation" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasObjective
 :hasObjective rdf:type owl:ObjectProperty ;
               rdfs:domain :Plan ;
               rdfs:label "hasObjective" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#hasOutputInformation
+:hasOutputInformation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasInformation ;
+                      rdfs:label "hasOutputInformation" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#hasParentIssue
@@ -365,6 +378,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                  rdfs:range dicv:PropertyState ;
                  rdfs:comment "The property state that caused the issue" ;
                  rdfs:label "isCausedByState" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#isCreatedBy
+:isCreatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :InformationContentEntity ;
+             rdfs:range dica:Agent ;
+             rdfs:label "isCreatedBy" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isDocumentedBy
@@ -566,6 +586,13 @@ dice:isCarrierOfAtAllTimes rdf:type owl:ObjectProperty .
                rdfs:range xsd:anyURI ;
                rdfs:comment "An Web address (URI) from which the information content entity can be accessed" ;
                rdfs:label "hasWebAddress" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Information#isCreatedAt
+:isCreatedAt rdf:type owl:DatatypeProperty ;
+             rdfs:domain :InformationContentEntity ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "isCreatedAt" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Information#isProducedAt
